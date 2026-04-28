@@ -1,0 +1,103 @@
+SM7325 kodiak
+SM7350 cedros
+SM4450 clarence
+SM6450 netrani
+SM6475 netrani
+SM7435 netrani
+SM7450 fillmore
+SM7475 ???
+SM8635 palawan
+SM8735 bonito
+SM8850 kaanapali
+SM7250 saipan
+SM7225 bitra / lagoon
+SM6225 divar
+SM4250 kamorta
+SM7150 MOOREA / steppe
+SM6150 TALOS / steppe
+SM7125 rennell / atoll
+SC8180X and SDM1000 are the same huh
+SW5100 atherton
+SM4125 agatti
+QCM2290 agatti
+SM6375 strait
+SM4635 kalpeni
+APQ8016E              KICHI
+APQ8064               AVENGER
+APQ8064-AU            WAVERIDERSG
+APQ8084               GANDALF
+APQ8094/MPQ8092, wtf  ISTARI
+M/APQ8092             LUXOR
+MSM8210               MOWGLI
+MSM8909 /APQ8009??    CHEEL
+MSM8916               BAGHEERA
+MSM8917               FEEROLITE
+MSM8926               FRODO
+MSM8926               GIMLI
+MSM8936               SHERE
+MSM8937               FEERO
+MSM8953 Pro           JACALA
+MSM8962               THORIN
+MSM8974               ARAGORN
+MSM8976               ELDARION
+MSM8992               ESTEL
+MSM8994               ELESSAR
+MSM8996               ISTARI
+MSM8997               NAZGULQ
+MSM8998               NAZGUL
+MSM8x10               DINO
+SA8255P               LEMANS
+SC8180                POIPU
+SC8280                MAKENA
+SC8380                HAMOA
+SDM429                HATHI
+SDM450                FIRELORD
+SDM630                STARHAWK
+SDM636                BLACKBOLT
+SDM660/SDA660         STARLORD
+SDM670                WARLOCK
+SDM840                NAPALIQ
+SDM845                NAPALI
+SM4350                MANNAR
+SM4350(?typo?)        MANNER
+SM4450                CLARENCE
+SM6125                NICOBAR
+SM6150                TALOS
+SM6225                DIVAR
+SM6250                RENNELL
+SM6350                BITRA
+SM6375                STRAIT
+SM6450                NETRANI
+SM7150                MOOREA
+SM7250                SAIPAN
+SM7325                KODIAK
+SM7350                CEDROS
+SM7450                FILLMORE
+SM8150                HANA
+SM8250                KONA
+SM8350                LAHAINA
+SM8450                WAIPIO
+SM8550                KAILUA
+SM8650                LANAI
+SM8750                PAKALA
+SM8996AU              RADAGAST
+SW5100                ATHERTON
+SW5100                MONACO
+SXR2230P              HALLIDAY
+?? lemans
+?? monaco
+?? halliday
+SX1230 aurora
+SXR2330 matrix
+SW5100 atherton
+?? tofino
+Lemans = sa8255p
+?? glymur
+sm7435/sm6450 are parrot, sm7425 is yupik (pretty sure), sm6225  is bengal
+sorry that should have been sm7325 is yupik
+6475 is cooler parrot (parrot66)
+845 is msmskunk
+Sm8150 is msmnile
+sm8350 is lahaina
+sm8250 is kona
+sm8450 is waipo
