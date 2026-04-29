@@ -380,7 +380,7 @@
     ]
   },
   "QCS8550": {
-    "HLOS": "Kalama",
+    "HLOS": "KalamaP",
     "BSP": [
       "Kailua"
     ]
@@ -446,7 +446,7 @@
     ]
   },
   "CQ8750S": {
-    "HLOS": "Sun",
+    "HLOS": "SunP",
     "BSP": [
       "Pakala"
     ]
