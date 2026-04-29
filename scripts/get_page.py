@@ -18,7 +18,9 @@ def dumpToJson(deviceName,
                fiveGBands,
                launchYear,
                metricDimensions,
-               imperialDimensions):
+               imperialDimensions,
+               metricWeight,
+               imperialWeight):
 
     networkTechnologiesList = networkTechnologiesList.text
     twoGBands = twoGBands.text if twoGBands else "N/A"
@@ -52,6 +54,10 @@ def dumpToJson(deviceName,
                 "Dimensions": {
                     "Metric (mm)": metricDimensions,
                     "Imperial (in)": imperialDimensions
+                },
+                "Weight": {
+                    "Metric (g)": metricWeight,
+                    "Imperial (oz)": imperialWeight
                 }
             }
         }
@@ -70,10 +76,15 @@ def get_page(url):
     fourGBands = prettyresult.select_one("[data-spec='net4g']")
     fiveGBands = prettyresult.select_one("[data-spec='net5g']")
     launchYear = prettyresult.select_one("[data-spec='year']").text.split(",")[0].strip()
-    dimensions = prettyresult.select_one("[data-spec='dimensions']").text.strip()
+    dimensions = prettyresult.select_one("[data-spec='dimensions']").text
+    weight = prettyresult.select_one("[data-spec='weight']").text
+
+    # Manipulate dimensions
     metricDimensions, imperialDimensions = dimensions.split("mm")[0].strip(), dimensions.split("(")[1]
     metricDimensions = [float(metric.strip().replace(" ","").replace("mm", "")) for metric in metricDimensions.split("x")]
     imperialDimensions = [float(imperial.strip().replace(" ","").replace("in)", "")) for imperial in imperialDimensions.split("x")]
+    # Manipulate weight
+    metricWeight, imperialWeight = weight.split("g")[0].strip(), weight.split("(")[1].replace(" lb)", "").replace(" oz)", "")
 
     print(dumpToJson(deviceName,
                      networkTechnologiesList,
@@ -83,7 +94,9 @@ def get_page(url):
                      fiveGBands,
                      launchYear,
                      metricDimensions,
-                     imperialDimensions
+                     imperialDimensions,
+                     metricWeight,
+                     imperialWeight
                      ))
 
 
