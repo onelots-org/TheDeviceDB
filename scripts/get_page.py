@@ -20,7 +20,8 @@ def dumpToJson(deviceName,
                metricDimensions,
                imperialDimensions,
                metricWeight,
-               imperialWeight):
+               imperialWeight,
+               sims):
 
     networkTechnologiesList = networkTechnologiesList.text
     twoGBands = twoGBands.text if twoGBands else "N/A"
@@ -58,7 +59,8 @@ def dumpToJson(deviceName,
                 "Weight": {
                     "Metric (g)": metricWeight,
                     "Imperial (oz)": imperialWeight
-                }
+                },
+                "Sim": sims
             }
         }
     }
@@ -78,6 +80,7 @@ def get_page(url):
     launchYear = prettyresult.select_one("[data-spec='year']").text.split(",")[0].strip()
     dimensions = prettyresult.select_one("[data-spec='dimensions']").text
     weight = prettyresult.select_one("[data-spec='weight']").text
+    sims = prettyresult.select_one("[data-spec='sim']").text
 
     # Manipulate dimensions
     metricDimensions, imperialDimensions = dimensions.split("mm")[0].strip(), dimensions.split("(")[1]
@@ -85,6 +88,11 @@ def get_page(url):
     imperialDimensions = [float(imperial.strip().replace(" ","").replace("in)", "")) for imperial in imperialDimensions.split("x")]
     # Manipulate weight
     metricWeight, imperialWeight = weight.split("g")[0].strip(), weight.split("(")[1].replace(" lb)", "").replace(" oz)", "")
+    # Sim : Yes or N/A
+    if "No" in sims:
+        sims = "N/A"
+    else:
+        sims = [sim.strip().replace(" ", "") for sim in sims.split("+")]
 
     print(dumpToJson(deviceName,
                      networkTechnologiesList,
@@ -96,7 +104,8 @@ def get_page(url):
                      metricDimensions,
                      imperialDimensions,
                      metricWeight,
-                     imperialWeight
+                     imperialWeight,
+                     sims
                      ))
 
 
