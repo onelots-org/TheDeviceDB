@@ -5,6 +5,12 @@
       "Napali"
     ]
   },
+  "SM4125": {
+    "HLOS": "Bengal",
+    "BSP": [
+      "Agatti"
+      ]
+  },
   "SM6115": {
     "HLOS": "Bengal",
     "BSP": [
@@ -83,6 +89,12 @@
     "BSP": [
       "Bitra",
       "Divar"
+    ]
+  },
+  "SM6250": {
+    "HLOS": "Atoll",
+    "BSP": [
+      "Atoll"
     ]
   },
   "SM7225": {
@@ -170,6 +182,12 @@
       "Bitra"
     ]
   },
+  "SM6370": {
+    "HLOS": "Holi",
+    "BSP": [
+      "Aran"
+    ]
+  },
   "SM6375": {
     "HLOS": "Holi",
     "BSP": [
@@ -189,6 +207,12 @@
     "BSP": [
       "Blair",
       "Strait"
+    ]
+  },
+  "SM7315": {
+    "HLOS": "Lahaina",
+    "BSP": [
+      "Faroe"
     ]
   },
   "SM7325": {
@@ -218,6 +242,12 @@
       "Cedros"
     ]
   },
+  "SM8325": {
+    "HLOS": "Lahaina",
+    "BSP": [
+      "Bodrum"
+    ]
+  },
   "SM8350": {
     "HLOS": "Lahaina",
     "BSP": [
@@ -228,6 +258,12 @@
     "HLOS": "Lahaina",
     "BSP": [
       "Lahaina"
+    ]
+  },
+  "SM4425": {
+    "HLOS": "Waipio",
+    "BSP": [
+      "Puna"
     ]
   },
   "SM4450": {
@@ -304,6 +340,12 @@
       "Tofino"
     ]
   },
+  "SM8415": {
+    "HLOS": "Waipio",
+    "BSP": [
+      "Alakai"
+    ]
+  },
   "SM8450": {
     "HLOS": "Waipio",
     "BSP": [
@@ -315,6 +357,12 @@
     "BSP": [
       "Cape",
       "Palima"
+    ]
+  },
+  "SM7525": {
+    "HLOS": "Kalama",
+    "BSP": [
+      "Shaw"
     ]
   },
   "SM7550": {
