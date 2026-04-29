@@ -16,7 +16,9 @@ def dumpToJson(deviceName,
                threeGBands,
                fourGBands,
                fiveGBands,
-               launchYear):
+               launchYear,
+               metricDimensions,
+               imperialDimensions):
 
     networkTechnologiesList = networkTechnologiesList.text
     twoGBands = twoGBands.text if twoGBands else "N/A"
@@ -46,6 +48,12 @@ def dumpToJson(deviceName,
                 "5G Bands": fiveGBands
             },
             "Launch Year": launchYear,
+            "Body": {
+                "Dimensions": {
+                    "Metric (mm)": metricDimensions,
+                    "Imperial (in)": imperialDimensions
+                }
+            }
         }
     }
     return page
@@ -62,7 +70,10 @@ def get_page(url):
     fourGBands = prettyresult.select_one("[data-spec='net4g']")
     fiveGBands = prettyresult.select_one("[data-spec='net5g']")
     launchYear = prettyresult.select_one("[data-spec='year']").text.split(",")[0].strip()
-
+    dimensions = prettyresult.select_one("[data-spec='dimensions']").text.strip()
+    metricDimensions, imperialDimensions = dimensions.split("mm")[0].strip(), dimensions.split("(")[1]
+    metricDimensions = [float(metric.strip().replace(" ","").replace("mm", "")) for metric in metricDimensions.split("x")]
+    imperialDimensions = [float(imperial.strip().replace(" ","").replace("in)", "")) for imperial in imperialDimensions.split("x")]
 
     print(dumpToJson(deviceName,
                      networkTechnologiesList,
@@ -70,8 +81,11 @@ def get_page(url):
                      threeGBands,
                      fourGBands,
                      fiveGBands,
-                     launchYear
+                     launchYear,
+                     metricDimensions,
+                     imperialDimensions
                      ))
+
 
 urls = ("https://www.gsmarena.com/xiaomi_redmi_note_11_pro_5g-11333.php",
         "https://www.gsmarena.com/nokia_6110-8.php",
@@ -83,3 +97,4 @@ urls = ("https://www.gsmarena.com/xiaomi_redmi_note_11_pro_5g-11333.php",
 for url in urls:
     get_page(url)
 
+#get_page("https://www.gsmarena.com/oscal_s80-12115.php")
