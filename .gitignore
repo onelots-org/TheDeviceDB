@@ -20,3 +20,4 @@ parts
 var
 sdist
 .installed.cfg
+codenames.txt

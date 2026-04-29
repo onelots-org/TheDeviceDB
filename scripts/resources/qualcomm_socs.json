@@ -1,53 +1,442 @@
 {
-  "SM6115": "Bengal",
-  "SM6125": "Trinket",
-  "SM6150-AC": "Undefined",
-  "SM7125": "Atoll",
-  "SM7150-AB": "Undefined",
-  "SM7150-AC": "Undefined",
-  "SM8150-AC": "Hana",
-  "SM4250-AA": "Undefined",
-  "SM6225": "Undefined",
-  "SM6225-AD": "Undefined",
-  "SM7225-2-AB": "Undefined",
-  "SM7250-AA": "Nairo",
-  "SM7250-AB": "Lito",
-  "SM7250-AC": "Undefined",
-  "SM8250": "Kona",
-  "SM8250-AB": "Kona",
-  "SM8250-AC": "Kona",
-  "SM4350": "Holi",
-  "SM4350-AC": "Holi",
-  "SM4375": "Blair_Lite",
-  "SM6350": "Undefined",
-  "SM6375": "Blair",
-  "SM6375-AB": "Blair",
-  "SM6375-AC": "Blair",
-  "SM7325": "Undefined",
-  "SM7325-AE": "Undefined",
-  "SM7325-AF": "Undefined",
-  "SM7350": "Undefined",
-  "SM8350": "Lahaina",
-  "SM8350-AC": "Lahaina",
-  "SM4450": "Undefined",
-  "SM6450-AC": "Undefined",
-  "SM6475-AB": "Undefined",
-  "SM7435-AB": "Undefined",
-  "SM7450-AB": "Undefined",
-  "SM7475-AC": "Undefined",
-  "SM8450": "Waipio",
-  "SM8475": "Palima",
-  "SM7550-AB": "Crow",
-  "SM8550-AB": "Kalama",
-  "SM8550-AC": "Kalama",
-  "SM4635": "Pitti",
-  "SM7645": "Volcano",
-  "SM8635": "Undefined",
-  "SM8650-AB": "Lanai",
-  "SM8650-AC": "Lanai",
-  "SM8735": "Undefined",
-  "SM8750-AB": "Sun",
-  "SM8750-AC": "Sun",
-  "SM8750-3-AB": "Sun",
-  "SM8850-AC": "Sun"
+  "SDM845": {
+    "HLOS": "Msmskunk",
+    "BSP": [
+      "Napali"
+    ]
+  },
+  "SM6115": {
+    "HLOS": "Bengal",
+    "BSP": [
+      "Undefined"
+      ]
+  },
+  "SM6125": {
+    "HLOS": "Trinket",
+    "BSP": [
+      "Nicobar"
+      ]
+  },
+  "SM6150": {
+    "HLOS": "Undefined",
+    "BSP": [
+      "Talos"
+      ]
+  },
+  "SM6150-AC": {
+    "HLOS": "Undefined",
+    "BSP": [
+      "Talos"
+      ]
+  },
+  "SM7125": {
+    "HLOS": "Atoll",
+    "BSP": [
+      "Rennell"
+    ]
+  },
+  "SM7150": {
+    "HLOS": "Sdmmagpie",
+    "BSP": [
+      "Moorea"
+    ]
+  },
+  "SM7150-AB": {
+    "HLOS": "Sdmmagpie",
+    "BSP": [
+      "Moorea"
+    ]
+  },
+  "SM7150-AC": {
+    "HLOS": "Sdmmagpie",
+    "BSP": [
+      "Moorea"
+    ]
+  },
+  "SM8150": {
+    "HLOS": "Msmnile",
+    "BSP": [
+      "Hana"
+    ]
+  },
+  "SM8150-AC": {
+    "HLOS": "Msmnile",
+    "BSP": [
+      "Hana"
+    ]
+  },
+  "SM4250-AA": {
+    "HLOS": "Bengal",
+    "BSP": [
+      "Kamorta"
+    ]
+  },
+  "SM6225": {
+    "HLOS": "Bengal",
+    "BSP": [
+      "Bitra",
+      "Divar"
+    ]
+  },
+  "SM6225-AD": {
+    "HLOS": "Bengal",
+    "BSP": [
+      "Bitra",
+      "Divar"
+    ]
+  },
+  "SM7225": {
+    "HLOS": "Lito",
+    "BSP": [
+      "Bitra",
+      "Lagoon"
+    ]
+  },
+  "SM7225-2-AB": {
+    "HLOS": "Lito",
+    "BSP": [
+      "Bitra",
+      "Lagoon"
+    ]
+  },
+  "SM7250": {
+    "HLOS": "Lito",
+    "BSP": [
+      "Saipan",
+      "Nairo"
+    ]
+  },
+  "SM7250-AA": {
+    "HLOS": "Lito",
+    "BSP": [
+      "Saipan",
+      "Nairo"
+    ]
+  },
+  "SM7250-AB": {
+    "HLOS": "Lito",
+    "BSP": [
+      "Saipan",
+      "Nairo"
+    ]
+  },
+  "SM7250-AC": {
+    "HLOS": "Lito",
+    "BSP": [
+      "Saipan",
+      "Nairo"
+    ]
+  },
+  "SM8250": {
+    "HLOS": "Kona",
+    "BSP": [
+      "Kona"
+    ]
+  },
+  "SM8250-AB": {
+    "HLOS": "Kona",
+    "BSP": [
+      "Kona"
+    ]
+  },
+  "SM8250-AC": {
+    "HLOS": "Kona",
+    "BSP": [
+      "Kona"
+    ]
+  },
+  "SM4350": {
+    "HLOS": "Holi",
+    "BSP": [
+      "Mannar"
+    ]
+  },
+  "SM4350-AC": {
+    "HLOS": "Holi",
+    "BSP": [
+      "Mannar"
+    ]
+  },
+  "SM4375": {
+    "HLOS": "Holi",
+    "BSP": [
+      "Conic",
+      "Blair_Lite"
+    ]
+  },
+  "SM6350": {
+    "HLOS": "Lito",
+    "BSP": [
+      "Bitra"
+    ]
+  },
+  "SM6375": {
+    "HLOS": "Holi",
+    "BSP": [
+      "Blair",
+      "Strait"
+    ]
+  },
+  "SM6375-AB": {
+    "HLOS": "Holi",
+    "BSP": [
+      "Blair",
+      "Strait"
+    ]
+  },
+  "SM6375-AC": {
+    "HLOS": "Holi",
+    "BSP": [
+      "Blair",
+      "Strait"
+    ]
+  },
+  "SM7325": {
+    "HLOS": "Lahaina",
+    "BSP": [
+      "Kodiak",
+      "Yupik"
+    ]
+  },
+  "SM7325-AE": {
+    "HLOS": "Lahaina",
+    "BSP": [
+      "Kodiak",
+      "Yupik"
+    ]
+  },
+  "SM7325-AF": {
+    "HLOS": "Lahaina",
+    "BSP": [
+      "Kodiak",
+      "Yupik"
+    ]
+  },
+  "SM7350": {
+    "HLOS": "Lahaina",
+    "BSP": [
+      "Cedros"
+    ]
+  },
+  "SM8350": {
+    "HLOS": "Lahaina",
+    "BSP": [
+      "Lahaina"
+    ]
+  },
+  "SM8350-AC": {
+    "HLOS": "Lahaina",
+    "BSP": [
+      "Lahaina"
+    ]
+  },
+  "SM4450": {
+    "HLOS": "Parrot",
+    "BSP": [
+      "Clarence"
+    ]
+  },
+  "SM6450": {
+    "HLOS": "Parrot",
+    "BSP": [
+      "Netrani",
+      "Parrot"
+    ]
+  },
+  "SM6450-AC": {
+    "HLOS": "Parrot",
+    "BSP": [
+      "Netrani",
+      "Parrot"
+    ]
+  },
+  "SM6475": {
+    "HLOS": "Parrot",
+    "BSP": [
+      "Netrani",
+      "Parrot"
+    ]
+  },
+  "SM6475-AB": {
+    "HLOS": "Parrot",
+    "BSP": [
+      "Netrani",
+      "Parrot"
+    ]
+  },
+  "SM7435": {
+    "HLOS": "Parrot",
+    "BSP": [
+      "Netrani",
+      "Parrot"
+    ]
+  },
+  "SM7435-AB": {
+    "HLOS": "Parrot",
+    "BSP": [
+      "Netrani",
+      "Parrot"
+    ]
+  },
+  "SM7450": {
+    "HLOS": "Waipio",
+    "BSP": [
+      "Fillmore",
+      "Diwali"
+    ]
+  },
+  "SM7450-AB": {
+    "HLOS": "Waipio",
+    "BSP": [
+      "Fillmore",
+      "Diwali"
+    ]
+  },
+  "SM7475": {
+    "HLOS": "Waipio",
+    "BSP": [
+      "Tofino"
+    ]
+  },
+  "SM7475-AC": {
+    "HLOS": "Waipio",
+    "BSP": [
+      "Tofino"
+    ]
+  },
+  "SM8450": {
+    "HLOS": "Waipio",
+    "BSP": [
+      "Taro"
+    ]
+  },
+  "SM8475": {
+    "HLOS": "Waipio",
+    "BSP": [
+      "Cape",
+      "Palima"
+    ]
+  },
+  "SM7550": {
+    "HLOS": "Kalama",
+    "BSP": [
+      "Crow",
+      "Kapiti"
+    ]
+  },
+  "SM7550-AB": {
+    "HLOS": "Kalama",
+    "BSP": [
+      "Crow",
+      "Kapiti"
+    ]
+  },
+  "QCS8550": {
+    "HLOS": "Kalama",
+    "BSP": [
+      "Kailua"
+    ]
+  },
+  "SM8550": {
+    "HLOS": "Kalama",
+    "BSP": [
+      "Kailua"
+    ]
+  },
+  "SM8550-AB": {
+    "HLOS": "Kalama",
+    "BSP": [
+      "Kailua"
+    ]
+  },
+  "SM8550-AC": {
+    "HLOS": "Kalama",
+    "BSP": [
+      "Kailua"
+    ]
+  },
+  "SM4635": {
+    "HLOS": "Pitti",
+    "BSP": [
+      "Kalpeni"
+    ]
+  },
+  "SM7645": {
+    "HLOS":"Volcano",
+    "BSP": [
+      "Undefined"
+    ]
+  },
+  "SM8635": {
+    "HLOS":"Undefined",
+    "BSP": [
+      "Palawan"
+    ]
+  },
+  "SM8650": {
+    "HLOS":"Pineapple",
+    "BSP": [
+      "Lanai"
+    ]
+  },
+  "SM8650-AB": {
+    "HLOS":"Pineapple",
+    "BSP": [
+      "Lanai"
+    ]
+  },
+  "SM8650-AC": {
+    "HLOS":"Pineapple",
+    "BSP": [
+      "Lanai"
+    ]
+  },
+  "SM8735": {
+    "HLOS":"Undefined",
+    "BSP": [
+      "Bonito"
+    ]
+  },
+  "CQ8750S": {
+    "HLOS": "Sun",
+    "BSP": [
+      "Pakala"
+    ]
+  },
+  "SM8750": {
+    "HLOS": "Sun",
+    "BSP": [
+      "Pakala"
+    ]
+  },
+  "SM8750-AB": {
+    "HLOS": "Sun",
+    "BSP": [
+      "Pakala"
+    ]
+  },
+  "SM8750-AC": {
+    "HLOS": "Sun",
+    "BSP": [
+      "Pakala"
+    ]
+  },
+  "SM8750-3-AB": {
+    "HLOS": "Sun",
+    "BSP": [
+      "Pakala"
+    ]
+  },
+  "SM8850": {
+    "HLOS": "Kanoe",
+    "BSP": [
+      "Kaanapali"
+    ]
+  },
+  "SM8850-AC": {
+    "HLOS": "Kanoe",
+    "BSP": [
+      "Kaanapali"
+    ]
+  }
 }
