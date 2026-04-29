@@ -106,6 +106,7 @@ def get_page(url):
     displaySpecsList = prettyresult.select_one("[data-spec='displaytype']").text
     displaySizeList = prettyresult.select_one("[data-spec='displaysize']").text
     displayResolutionList = prettyresult.select_one("[data-spec='displayresolution']").text
+    displayProtection = prettyresult.select_one("[data-spec='displayprotection']")
 
     # Manipulate dimensions
     metricDimensions, imperialDimensions = dimensions.split("mm")[0].strip(), dimensions.split("(")[1]
@@ -134,7 +135,13 @@ def get_page(url):
             widthPixels, heightPixels, displayRatio, displayDensity = displayResolutionList.split(",")[0].split("x")[0].replace(" ", ""), displayResolutionList.split(",")[0].split("x")[1].replace(" ", "").replace("pi", ""), displayResolutionList.split(",")[1].split("ratio")[0].strip().replace(" ", ""), displayResolutionList.split(",")[1].split("~")[1].split("ppi")[0].strip().replace(" ", "")
     else:
         widthPixels, heightPixels, displayRatio, displayDensity = "N/A", "N/A", "N/A", displayResolutionList
+    # Display protection (Gorilla Glass, etc)
+    if not displayProtection:
+        displayProtection = "N/A"
+    else :
+        displayProtection = displayProtection.text
 
+    print(displayProtection)
     print(dumpToJson(deviceName,
                      networkTechnologiesList,
                      twoGBands,
