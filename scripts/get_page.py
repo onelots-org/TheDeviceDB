@@ -21,7 +21,9 @@ def dumpToJson(deviceName,
                imperialDimensions,
                metricWeight,
                imperialWeight,
-               sims):
+               sims,
+               displaySpecs,
+               maxRefreshRate):
 
     networkTechnologiesList = networkTechnologiesList.text
     twoGBands = twoGBands.text if twoGBands else "N/A"
@@ -61,6 +63,10 @@ def dumpToJson(deviceName,
                     "Imperial (oz)": imperialWeight
                 },
                 "Sim": sims
+            },
+            "Display": {
+                "Specifications": displaySpecs,
+                "Max Refresh Rate": maxRefreshRate
             }
         }
     }
@@ -81,6 +87,9 @@ def get_page(url):
     dimensions = prettyresult.select_one("[data-spec='dimensions']").text
     weight = prettyresult.select_one("[data-spec='weight']").text
     sims = prettyresult.select_one("[data-spec='sim']").text
+    displaySpecsList = prettyresult.select_one("[data-spec='displaytype']").text
+
+    print(displaySpecsList)
 
     # Manipulate dimensions
     metricDimensions, imperialDimensions = dimensions.split("mm")[0].strip(), dimensions.split("(")[1]
@@ -93,6 +102,9 @@ def get_page(url):
         sims = "N/A"
     else:
         sims = [sim.strip().replace(" ", "") for sim in sims.split("+")]
+    # Display : let's just make a list separated by commas
+    displaySpecs = [displaySpecs.strip() for displaySpecs in displaySpecsList.split(",")]
+    maxRefreshRate = next((item for item in displaySpecs if "Hz" in item), None)
 
     print(dumpToJson(deviceName,
                      networkTechnologiesList,
@@ -105,7 +117,9 @@ def get_page(url):
                      imperialDimensions,
                      metricWeight,
                      imperialWeight,
-                     sims
+                     sims,
+                     displaySpecs,
+                     maxRefreshRate
                      ))
 
 
