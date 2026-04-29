@@ -78,8 +78,10 @@ def dumpToJson(deviceName,
                     "Square centimeters": metricDisplaySizeSquared
                 },
                 "Resolution": {
-                    "Width": widthPixels,
-                    "Heigth": heightPixels,
+                    "Size": {
+                        "Width": widthPixels,
+                        "Heigth": heightPixels,
+                    },
                     "Ratio": displayRatio,
                     "Density": displayDensity
                 }
