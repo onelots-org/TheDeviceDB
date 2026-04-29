@@ -7,6 +7,9 @@ scraper = cloudscraper.create_scraper()
 with open("headers.json", "r") as f:
     headers_list = json.load(f)
 
+with open("android_versions.json") as f:
+    android_codenames = json.load(f)
+
 def get_random_headers():
     return random.choice(headers_list)
 
@@ -29,7 +32,12 @@ def dumpToJson(deviceName,
                widthPixels,
                heightPixels,
                displayRatio,
-               displayDensity):
+               displayDensity,
+               stockAndroidLaunchVersion,
+               stockAndroidLaunchVersionCodename,
+               stockLaunchRom,
+               stockLaunchRomVersion
+               ):
 
     networkTechnologiesList = networkTechnologiesList.text if networkTechnologiesList else "N/A"
     twoGBands = twoGBands.text if twoGBands else "N/A"
@@ -84,6 +92,14 @@ def dumpToJson(deviceName,
                     },
                     "Ratio": displayRatio,
                     "Density": displayDensity
+                },
+            },
+            "Platform Informations": {
+                "OS": {
+                    "Android Version": stockAndroidLaunchVersion,
+                    "Android Version Codename": stockAndroidLaunchVersionCodename,
+                    "Stock OS": stockLaunchRom,
+                    "Stock OS Version": stockLaunchRomVersion
                 }
             }
         }
@@ -109,6 +125,7 @@ def get_page(url):
     displaySizeList = prettyresult.select_one("[data-spec='displaysize']").text
     displayResolutionList = prettyresult.select_one("[data-spec='displayresolution']").text
     displayProtection = prettyresult.select_one("[data-spec='displayprotection']")
+    osInformationsList = prettyresult.select_one("[data-spec='os']")
 
     # Manipulate dimensions
     metricDimensions, imperialDimensions = dimensions.split("mm")[0].strip(), dimensions.split("(")[1]
@@ -142,8 +159,16 @@ def get_page(url):
         displayProtection = "N/A"
     else :
         displayProtection = displayProtection.text
+    # OS informations. Come by 3, separated by a comma : Android version, stock rom and its version. Extract all and associate to android codename.
+    if not osInformationsList:
+        stockAndroidLaunchVersion, stockAndroidLaunchVersionCodename, stockLaunchRom, stockLaunchRomVersion = "N/A", "N/A", "N/A", "N/A"
+    else:
+        osInformationsList = osInformationsList.text
+        stockAndroidLaunchVersion = osInformationsList.split(",")[0].replace("Android ", "") # Not an int !
+        stockAndroidLaunchVersionCodename = android_codenames.get(stockAndroidLaunchVersion)
+        stockLaunchRom = osInformationsList.split(",")[1].split()[0]
+        stockLaunchRomVersion = osInformationsList.split(",")[1].split()[-1]
 
-    print(displayProtection)
     print(dumpToJson(deviceName,
                      networkTechnologiesList,
                      twoGBands,
@@ -163,7 +188,11 @@ def get_page(url):
                      widthPixels,
                      heightPixels,
                      displayRatio,
-                     displayDensity
+                     displayDensity,
+                     stockAndroidLaunchVersion,
+                     stockAndroidLaunchVersionCodename,
+                     stockLaunchRom,
+                     stockLaunchRomVersion
                      ))
 
 
