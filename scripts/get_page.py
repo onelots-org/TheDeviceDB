@@ -25,9 +25,13 @@ def dumpToJson(deviceName,
                displaySpecs,
                maxRefreshRate,
                metricDisplaySizeSquared,
-               imperialDisplaySize):
+               imperialDisplaySize,
+               widthPixels,
+               heightPixels,
+               displayRatio,
+               displayDensity):
 
-    networkTechnologiesList = networkTechnologiesList.text
+    networkTechnologiesList = networkTechnologiesList.text if networkTechnologiesList else "N/A"
     twoGBands = twoGBands.text if twoGBands else "N/A"
     threeGBands = threeGBands.text if threeGBands else "N/A"
     fourGBands = fourGBands.text if fourGBands else "N/A"
@@ -72,6 +76,12 @@ def dumpToJson(deviceName,
                 "Size": {
                     "Inches": imperialDisplaySize,
                     "Square centimeters": metricDisplaySizeSquared
+                },
+                "Resolution": {
+                    "Width": widthPixels,
+                    "Heigth": heightPixels,
+                    "Ratio": displayRatio,
+                    "Density": displayDensity
                 }
             }
         }
@@ -95,6 +105,7 @@ def get_page(url):
     sims = prettyresult.select_one("[data-spec='sim']").text
     displaySpecsList = prettyresult.select_one("[data-spec='displaytype']").text
     displaySizeList = prettyresult.select_one("[data-spec='displaysize']").text
+    displayResolutionList = prettyresult.select_one("[data-spec='displayresolution']").text
 
     # Manipulate dimensions
     metricDimensions, imperialDimensions = dimensions.split("mm")[0].strip(), dimensions.split("(")[1]
@@ -115,6 +126,14 @@ def get_page(url):
         imperialDisplaySize, metricDisplaySizeSquared = None, None
     else:
         imperialDisplaySize, metricDisplaySizeSquared = displaySizeList.split("inches,")[0].strip().replace(" ", ""), displaySizeList.split("inches,")[1].replace("cm2", " ").split(" (")[0].replace(" ", "")
+    # Handling Display Resolution informations. Will show as 0000 x 0000, 00:0 ratio (~000 ppi density) OR just an information (E.g: "5 lines" for nokia 6610)
+    if "x" in displayResolutionList:
+        if not "ratio" in displayResolutionList:
+            widthPixels, heightPixels, displayRatio, displayDensity = displayResolutionList.split(",")[0].split("x")[0].replace(" ", ""), displayResolutionList.split(",")[0].split("x")[1].replace(" ", "").replace("pi","").replace("pixels", ""), "N/A", displayResolutionList.split("(")[1].split("~")[1].split("ppi")[0].strip().replace(" ", "")
+        else:
+            widthPixels, heightPixels, displayRatio, displayDensity = displayResolutionList.split(",")[0].split("x")[0].replace(" ", ""), displayResolutionList.split(",")[0].split("x")[1].replace(" ", "").replace("pi", ""), displayResolutionList.split(",")[1].split("ratio")[0].strip().replace(" ", ""), displayResolutionList.split(",")[1].split("~")[1].split("ppi")[0].strip().replace(" ", "")
+    else:
+        widthPixels, heightPixels, displayRatio, displayDensity = "N/A", "N/A", "N/A", displayResolutionList
 
     print(dumpToJson(deviceName,
                      networkTechnologiesList,
@@ -131,7 +150,11 @@ def get_page(url):
                      displaySpecs,
                      maxRefreshRate,
                      metricDisplaySizeSquared,
-                     imperialDisplaySize
+                     imperialDisplaySize,
+                     widthPixels,
+                     heightPixels,
+                     displayRatio,
+                     displayDensity
                      ))
 
 
