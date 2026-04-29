@@ -23,7 +23,9 @@ def dumpToJson(deviceName,
                imperialWeight,
                sims,
                displaySpecs,
-               maxRefreshRate):
+               maxRefreshRate,
+               metricDisplaySizeSquared,
+               imperialDisplaySize):
 
     networkTechnologiesList = networkTechnologiesList.text
     twoGBands = twoGBands.text if twoGBands else "N/A"
@@ -66,7 +68,11 @@ def dumpToJson(deviceName,
             },
             "Display": {
                 "Specifications": displaySpecs,
-                "Max Refresh Rate": maxRefreshRate
+                "Max Refresh Rate": maxRefreshRate,
+                "Size": {
+                    "Inches": imperialDisplaySize,
+                    "Square centimeters": metricDisplaySizeSquared
+                }
             }
         }
     }
@@ -88,8 +94,7 @@ def get_page(url):
     weight = prettyresult.select_one("[data-spec='weight']").text
     sims = prettyresult.select_one("[data-spec='sim']").text
     displaySpecsList = prettyresult.select_one("[data-spec='displaytype']").text
-
-    print(displaySpecsList)
+    displaySizeList = prettyresult.select_one("[data-spec='displaysize']").text
 
     # Manipulate dimensions
     metricDimensions, imperialDimensions = dimensions.split("mm")[0].strip(), dimensions.split("(")[1]
@@ -105,6 +110,11 @@ def get_page(url):
     # Display : let's just make a list separated by commas
     displaySpecs = [displaySpecs.strip() for displaySpecs in displaySpecsList.split(",")]
     maxRefreshRate = next((item for item in displaySpecs if "Hz" in item), None)
+    # Display Size : returns inches and square cm. Careful, some old devices don't have a display size. Let's return none.
+    if "in" not in displaySizeList:
+        imperialDisplaySize, metricDisplaySizeSquared = None, None
+    else:
+        imperialDisplaySize, metricDisplaySizeSquared = displaySizeList.split("inches,")[0].strip().replace(" ", ""), displaySizeList.split("inches,")[1].replace("cm2", " ").split(" (")[0].replace(" ", "")
 
     print(dumpToJson(deviceName,
                      networkTechnologiesList,
@@ -119,7 +129,9 @@ def get_page(url):
                      imperialWeight,
                      sims,
                      displaySpecs,
-                     maxRefreshRate
+                     maxRefreshRate,
+                     metricDisplaySizeSquared,
+                     imperialDisplaySize
                      ))
 
 
