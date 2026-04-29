@@ -14,29 +14,13 @@ def get_random_headers():
     return random.choice(headers_list)
 
 def dumpToJson(deviceName,
-               networkTechnologiesList,
-               twoGBands,
-               threeGBands,
-               fourGBands,
-               fiveGBands,
+               networkTechnologiesList, twoGBands, threeGBands, fourGBands, fiveGBands,
                launchYear,
-               metricDimensions,
-               imperialDimensions,
-               metricWeight,
-               imperialWeight,
-               sims,
-               displaySpecs,
-               maxRefreshRate,
-               metricDisplaySizeSquared,
-               imperialDisplaySize,
-               widthPixels,
-               heightPixels,
-               displayRatio,
-               displayDensity,
-               stockAndroidLaunchVersion,
-               stockAndroidLaunchVersionCodename,
-               stockLaunchRom,
-               stockLaunchRomVersion
+               metricDimensions, imperialDimensions, metricWeight, imperialWeight, sims,
+               displaySpecs, maxRefreshRate, metricDisplaySizeSquared, imperialDisplaySize,
+               widthPixels, heightPixels, displayRatio, displayDensity,
+               stockAndroidLaunchVersion, stockAndroidLaunchVersionCodename, stockLaunchRom, stockLaunchRomVersion,
+               chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness
                ):
 
     networkTechnologiesList = networkTechnologiesList.text if networkTechnologiesList else "N/A"
@@ -100,6 +84,13 @@ def dumpToJson(deviceName,
                     "Android Version Codename": stockAndroidLaunchVersionCodename,
                     "Stock OS": stockLaunchRom,
                     "Stock OS Version": stockLaunchRomVersion
+                },
+                "CPU": {
+                    "Vendor": chipsetVendor,
+                    "Platform": chipsetCode,
+                    "Platform Codename": chipsetCodename,
+                    "Market Name": chipsetMarketName,
+                    "Processor Engraving Fineness": chipsetEngravingFineness
                 }
             }
         }
@@ -126,6 +117,7 @@ def get_page(url):
     displayResolutionList = prettyresult.select_one("[data-spec='displayresolution']").text
     displayProtection = prettyresult.select_one("[data-spec='displayprotection']")
     osInformationsList = prettyresult.select_one("[data-spec='os']")
+    chipsetInformationsList = prettyresult.select_one("[data-spec='chipset']")
 
     # Manipulate dimensions
     metricDimensions, imperialDimensions = dimensions.split("mm")[0].strip(), dimensions.split("(")[1]
@@ -168,31 +160,26 @@ def get_page(url):
         stockAndroidLaunchVersionCodename = android_codenames.get(stockAndroidLaunchVersion)
         stockLaunchRom = osInformationsList.split(",")[1].split()[0]
         stockLaunchRomVersion = osInformationsList.split(",")[1].split()[-1]
+    # Handle chipset infos. Need to take qcom, mtk, unisoc, spreadtrum etc in account.
+    if not chipsetInformationsList:
+        chipsetVendor, chipsetCode, chipsetCodename, ChipsetMarketName,chipsetEngravingFineness = "N/A", "N/A", "N/A", "N/A", "N/A"
+    else:
+        chipsetInformationsList = chipsetInformationsList.text
+        chipsetVendor = chipsetInformationsList.split()[0]
+        chipsetCode = chipsetInformationsList.split()[1]
+        if chipsetVendor is not "Qualcomm":
+            chipsetCodename = "N/A"
+        chipsetMarketName = " ".join(chipsetInformationsList.split()[2:-2])
+        chipsetEngravingFineness = chipsetInformationsList.split()[-2].replace("(", "")
 
     print(dumpToJson(deviceName,
-                     networkTechnologiesList,
-                     twoGBands,
-                     threeGBands,
-                     fourGBands,
-                     fiveGBands,
+                     networkTechnologiesList, twoGBands, threeGBands, fourGBands, fiveGBands,
                      launchYear,
-                     metricDimensions,
-                     imperialDimensions,
-                     metricWeight,
-                     imperialWeight,
-                     sims,
-                     displaySpecs,
-                     maxRefreshRate,
-                     metricDisplaySizeSquared,
-                     imperialDisplaySize,
-                     widthPixels,
-                     heightPixels,
-                     displayRatio,
-                     displayDensity,
-                     stockAndroidLaunchVersion,
-                     stockAndroidLaunchVersionCodename,
-                     stockLaunchRom,
-                     stockLaunchRomVersion
+                     metricDimensions, imperialDimensions, metricWeight, imperialWeight, sims,
+                     displaySpecs, maxRefreshRate, metricDisplaySizeSquared, imperialDisplaySize,
+                     widthPixels, heightPixels, displayRatio, displayDensity,
+                     stockAndroidLaunchVersion, stockAndroidLaunchVersionCodename, stockLaunchRom, stockLaunchRomVersion,
+                     chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness
                      ))
 
 
@@ -203,7 +190,7 @@ urls = ("https://www.gsmarena.com/xiaomi_redmi_note_11_pro_5g-11333.php",
         "https://www.gsmarena.com/i_mobile_319-2595.php"
        )
 
-for url in urls:
-    get_page(url)
+#for url in urls:
+    #get_page(url)
 
-#get_page("https://www.gsmarena.com/oscal_s80-12115.php")
+get_page("https://www.gsmarena.com/oscal_s80-12115.php")
