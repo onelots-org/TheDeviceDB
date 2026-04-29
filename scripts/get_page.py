@@ -4,10 +4,10 @@ import json
 import random
 
 scraper = cloudscraper.create_scraper()
-with open("headers.json", "r") as f:
+with open("resources/headers.json", "r") as f:
     headers_list = json.load(f)
 
-with open("android_versions.json") as f:
+with open("resources/android_versions.json") as f:
     android_codenames = json.load(f)
 
 def get_random_headers():
