@@ -24,7 +24,7 @@ def extract_brands():
             name = a.contents[0].strip()
             brand_list.append(name)
 
-    with open("resources/vendors.json", "w") as f:
+    with open("../resources/vendors.json", "w") as f:
         json.dump(brand_list, f, indent=4)
 
     return brand_list
