@@ -32,13 +32,13 @@ def dumpToJson(deviceName,
     if "No cellular connectivity" not in networkTechnologiesList:
         networkTechnologiesList = [tech.strip().replace(" ", "") for tech in networkTechnologiesList.split("/")]
     if "N/A" not in twoGBands:
-        twoGBands = [int(twog.strip().replace("GSM", "").replace(" ", "")) for twog in twoGBands.split("/")]
+        twoGBands = [twog.strip() for twog in twoGBands.split("/")]
     if "N/A" not in threeGBands and threeGBands:
-        threeGBands = [int(threeg.strip().replace("HSDPA", "").replace(" ", "")) for threeg in threeGBands.split("/")]
+        threeGBands = [threeg.strip() for threeg in threeGBands.split("/")]
     if "N/A" not in fourGBands and fourGBands:
-        fourGBands = [int(fourg.strip().replace(" ", "")) for fourg in fourGBands.split(",")]
+        fourGBands = [fourg.strip() for fourg in fourGBands.split(",")]
     if "N/A" not in fiveGBands:
-        fiveGBands = [int(fiveg.strip().replace("SA/NSA", "").replace(" ", "")) for fiveg in fiveGBands.split(",")]
+        fiveGBands = [fiveg.strip() for fiveg in fiveGBands.split(",")]
 
     page = {
         "Device Name": deviceName,
@@ -167,7 +167,7 @@ def get_page(url):
         chipsetInformationsList = chipsetInformationsList.text
         chipsetVendor = chipsetInformationsList.split()[0]
         chipsetCode = chipsetInformationsList.split()[1]
-        if chipsetVendor is not "Qualcomm":
+        if chipsetVendor != "Qualcomm":
             chipsetCodename = "N/A"
         chipsetMarketName = " ".join(chipsetInformationsList.split()[2:-2])
         chipsetEngravingFineness = chipsetInformationsList.split()[-2].replace("(", "")
@@ -193,4 +193,4 @@ urls = ("https://www.gsmarena.com/xiaomi_redmi_note_11_pro_5g-11333.php",
 #for url in urls:
     #get_page(url)
 
-get_page("https://www.gsmarena.com/oscal_s80-12115.php")
+get_page("https://www.gsmarena.com/model-13000.php")
