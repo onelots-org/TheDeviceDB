@@ -409,10 +409,10 @@
       "Kalpeni"
     ]
   },
-  "SM7645": {
+  "SM7635": {
     "HLOS":"Volcano",
     "BSP": [
-      "Undefined"
+      "Milos"
     ]
   },
   "SM8635": {
@@ -437,6 +437,18 @@
     "HLOS":"Pineapple",
     "BSP": [
       "Lanai"
+    ]
+  },
+  "SM7750": {
+    "HLOS":"Kera",
+    "BSP": [
+      "Eliza"
+    ]
+  },
+  "SM7750-AC": {
+    "HLOS":"Kera",
+    "BSP": [
+      "Eliza"
     ]
   },
   "SM8735": {
