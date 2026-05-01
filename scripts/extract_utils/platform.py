@@ -10,15 +10,27 @@ def extract_network(page):
     osInformationsList = prettyresult.select_one("[data-spec='os']")
     chipsetInformationsList = prettyresult.select_one("[data-spec='chipset']")
 
-    # OS informations. Come by 3, separated by a comma : Android version, stock rom and its version. Extract all and associate to android codename.
+    # OS informations. Come by 4, separated by a comma : Android version, stock rom and its version. Extract all.
+    # stockOsLaunchName = Windows, Android, etc
+    # stockOsLaunchVersion = depends on the stockOsLaunchName. for windows, can be 8, 10 etc (10 ?), or for Android... Well yk
+    # stockLaunchCustomRom = stock rom, E.g Miui, HyperOs, OxygenOS, etc
+    # stockLaunchCustomRomVersion = stock rom version, E.g 10.1, 11, 6 etc... Depends on the "Custom" rom.
+    # stockAndroidLaunchCodename = Android codename, disabled if stockOsLaunchName != Android.
     if not osInformationsList:
-        stockAndroidLaunchVersion, stockAndroidLaunchVersionCodename, stockLaunchRom, stockLaunchRomVersion = "N/A", "N/A", "N/A", "N/A"
-    else:
+        stockOsLaunchName, stockOsLaunchVersion, stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename = "N/A", "N/A", "N/A", "N/A", "N/A"
+    elif "Microsoft" in osInformationsList.text:
+        osInformationsList = osInformationsList.text.split(" ")
+        stockOsLaunchName = osInformationsList[1].replace(" ", "")
+        stockOsLaunchVersion = osInformationsList[2].replace(" ", "")
+        stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename = "N/A", "N/A", "N/A"
+    elif "Android" in osInformationsList.text:
         osInformationsList = osInformationsList.text
-        stockAndroidLaunchVersion = osInformationsList.split(",")[0].replace("Android ", "")  # Not an int !
-        stockAndroidLaunchVersionCodename = android_codenames.get(stockAndroidLaunchVersion)
+        stockOsLaunchVersion = osInformationsList.split(",")[0].replace("Android ", "")  # Not an int !
+        print(stockOsLaunchVersion)
+        stockOsLaunchVersionCodename = android_codenames.get(stockOsLaunchVersion)
         stockLaunchRom = osInformationsList.split(",")[1].split()[0]
         stockLaunchRomVersion = osInformationsList.split(",")[1].split()[-1]
+
     # Handle chipset infos. Need to take qcom, mtk, unisoc, spreadtrum etc in account.
     if not chipsetInformationsList:
         chipsetVendor, chipsetCode, chipsetCodename, ChipsetMarketName, chipsetEngravingFineness = "N/A", "N/A", "N/A", "N/A", "N/A"
@@ -32,4 +44,4 @@ def extract_network(page):
         chipsetMarketName = " ".join(chipsetInformationsList.split()[2:-2])
         chipsetEngravingFineness = chipsetInformationsList.split()[-2].replace("(", "")
 
-    return stockAndroidLaunchVersion, stockAndroidLaunchVersionCodename, stockLaunchRom, stockLaunchRomVersion, chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness
+    return stockOsLaunchName, stockOsLaunchVersion, stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename, chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness

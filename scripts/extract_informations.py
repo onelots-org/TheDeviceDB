@@ -16,11 +16,16 @@ def get_page(url):
     scraper.headers.update(get_random_headers())
     result = scraper.get(url)
 
+    # Network
     networkTechnologiesList, twoGBands, threeGbands, fourGBands, fiveGBands = network.extract_network(result)
+    # Launch
     deviceName, launchYear = launch.extract_network(result)
+    # Dimensions
     metricDimensions, imperialDimensions, metricWeight, imperialWeight, sims = dimensions.extract_network(result)
+    # Display
     displaySpecs, maxRefreshRate, imperialDisplaySize, metricDisplaySizeSquared, widthPixels, heightPixels, displayRatio, displayDensity, displayProtection = display.extract_network(result)
-    stockAndroidLaunchVersion, stockAndroidLaunchVersionCodename, stockLaunchRom, stockLaunchRomVersion, chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness = platform.extract_network(result)
+    # Platform
+    stockOsLaunchName, stockOsLaunchVersion, stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename, chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness = platform.extract_network(result)
 
     print(jsonize.jsonize(deviceName,
                      networkTechnologiesList, twoGBands, threeGbands, fourGBands, fiveGBands,
@@ -28,13 +33,16 @@ def get_page(url):
                      metricDimensions, imperialDimensions, metricWeight, imperialWeight, sims,
                      displaySpecs, maxRefreshRate, metricDisplaySizeSquared, imperialDisplaySize,
                      widthPixels, heightPixels, displayRatio, displayDensity,
-                     stockAndroidLaunchVersion, stockAndroidLaunchVersionCodename, stockLaunchRom, stockLaunchRomVersion,
+                     stockOsLaunchName, stockOsLaunchVersion, stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename,
                      chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness
                      ))
 
 
-base_url = ("https://www.gsmarena.com/model-{}.php")
-random_page = random.randint(1, 14638)
+#base_url = ("https://www.gsmarena.com/model-{}.php")
+#random_page = random.randint(2002, 14638)
 
-print(base_url.format(random_page))
-get_page(base_url.format(random_page))
+#print(base_url.format(random_page))
+get_page("https://www.gsmarena.com/alcatel_fierce_xl_(windows)-7856.php")
+
+# TODO : à traiter, ça
+#get_page("https://www.gsmarena.com/model-8851.php")

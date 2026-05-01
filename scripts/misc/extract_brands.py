@@ -1,7 +1,6 @@
 import cloudscraper
 import bs4
 import json
-import time
 
 scraper = cloudscraper.create_scraper()
 url = "https://www.gsmarena.com/makers.php3"
