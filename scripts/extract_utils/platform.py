@@ -56,6 +56,15 @@ def get_android_custom_rom(osInformationsList):
 
     return stockLaunchCustomRom, stockLaunchCustomRomVersion
 
+
+def get_engraving_fineness(chipsetInformationsList):
+    if "nm" in chipsetInformationsList.lower():
+        chipsetEngravingFineness = chipsetInformationsList.split()[-2].replace("(", "")
+    else:
+        chipsetEngravingFineness = "N/A"
+    return chipsetEngravingFineness
+
+
 def extract_stockOsInfos(page):
     prettyresult = bs4.BeautifulSoup(page.text, "html.parser")
 
@@ -112,7 +121,11 @@ def extract_chipsetInfos(page):
     if not chipsetCodename:
         chipsetCodename = "N/A"
 
-    chipsetMarketName = " ".join(chipsetInformationsList.split()[2:-2])
-    chipsetEngravingFineness = chipsetInformationsList.split()[-2].replace("(", "")
+    if not "nm" in chipsetInformationsList.lower():
+        chipsetMarketName = " ".join(chipsetInformationsList.split()[2:])
+        chipsetEngravingFineness = get_engraving_fineness(chipsetInformationsList)
+    else:
+        chipsetMarketName = " ".join(chipsetInformationsList.split()[2:-2])
+        chipsetEngravingFineness = get_engraving_fineness(chipsetInformationsList)
 
     return chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness
