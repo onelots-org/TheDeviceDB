@@ -6,7 +6,7 @@ def jsonize(deviceName,
                metricDimensions, imperialDimensions, metricWeight, imperialWeight, sims,
                displaySpecs, maxRefreshRate, metricDisplaySizeSquared, imperialDisplaySize,
                widthPixels, heightPixels, displayRatio, displayDensity,
-               stockOsLaunchName, stockOsLaunchVersion, stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename,
+               stockOsLaunchName, stockOsLaunchVersion, stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename, maxAndroidVersionUpdate,
                chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness
                ):
 
@@ -52,7 +52,8 @@ def jsonize(deviceName,
                 "OS": {
                     "Stock OS Name": stockOsLaunchName,
                     "Stock OS Version": stockOsLaunchVersion,
-                    "Android Version Codename": stockAndroidLaunchCodename,
+                    "Stock Android Version Codename": stockAndroidLaunchCodename,
+                    "Max Android Version Update": maxAndroidVersionUpdate,
                     "Stock Custom OS": stockLaunchCustomRom,
                     "Stock Custom OS Version": stockLaunchCustomRomVersion
                 },

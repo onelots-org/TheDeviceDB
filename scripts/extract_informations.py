@@ -25,7 +25,8 @@ def get_page(url):
     # Display
     displaySpecs, maxRefreshRate, imperialDisplaySize, metricDisplaySizeSquared, widthPixels, heightPixels, displayRatio, displayDensity, displayProtection = display.extract_network(result)
     # Platform
-    stockOsLaunchName, stockOsLaunchVersion, stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename, chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness = platform.extract_network(result)
+    stockOsLaunchName, stockOsLaunchVersion, stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename, maxAndroidVersionUpdate = platform.extract_stockOsInfos(result)
+    chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness = platform.extract_chipsetInfos(result)
 
     print(jsonize.jsonize(deviceName,
                      networkTechnologiesList, twoGBands, threeGbands, fourGBands, fiveGBands,
@@ -33,16 +34,11 @@ def get_page(url):
                      metricDimensions, imperialDimensions, metricWeight, imperialWeight, sims,
                      displaySpecs, maxRefreshRate, metricDisplaySizeSquared, imperialDisplaySize,
                      widthPixels, heightPixels, displayRatio, displayDensity,
-                     stockOsLaunchName, stockOsLaunchVersion, stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename,
+                     stockOsLaunchName, stockOsLaunchVersion, stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename, maxAndroidVersionUpdate,
                      chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness
                      ))
 
-
 #base_url = ("https://www.gsmarena.com/model-{}.php")
 #random_page = random.randint(2002, 14638)
-
 #print(base_url.format(random_page))
-get_page("https://www.gsmarena.com/alcatel_fierce_xl_(windows)-7856.php")
-
-# TODO : à traiter, ça
-#get_page("https://www.gsmarena.com/model-8851.php")
+#get_page(base_url.format(random_page))
