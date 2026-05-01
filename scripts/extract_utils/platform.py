@@ -5,6 +5,12 @@ import re
 with open("resources/android_versions.json") as f:
     android_codenames = json.load(f)
 
+with open("resources/mediatek_socs.json") as f:
+    mediatek_socs = json.load(f)
+
+with open ("resources/qualcomm_socs.json") as f:
+    qualcomm_socs = json.load(f)
+
 # 5th attempt to match Gsmarena's freaking unexisting pattern
 
 def get_android_version(osInformationsList):
@@ -86,16 +92,27 @@ def extract_chipsetInfos(page):
     prettyresult = bs4.BeautifulSoup(page.text, "html.parser")
     chipsetInformationsList = prettyresult.select_one("[data-spec='chipset']")
     # Handle chipset infos. Need to take qcom, mtk, unisoc, spreadtrum etc in account.
+    # In a first time, let's only take care about qcom and mtk.
+
     if not chipsetInformationsList:
         chipsetVendor, chipsetCode, chipsetCodename, ChipsetMarketName, chipsetEngravingFineness = "N/A", "N/A", "N/A", "N/A", "N/A"
     else:
         chipsetInformationsList = chipsetInformationsList.text
         chipsetVendor = chipsetInformationsList.split()[0]
         chipsetCode = chipsetInformationsList.split()[1]
-        if chipsetVendor != "Qualcomm":
+        if chipsetVendor == "Qualcomm":
+            chipsetCodename = qualcomm_socs.get(chipsetCode)
+        elif chipsetVendor == "Mediatek":
+            chipsetMarketName = " ".join(chipsetInformationsList.split()[2:-2])
+            if not "MTK" in chipsetMarketName:
+                chipsetCodename = mediatek_socs.get(chipsetCode)
+        else:
             chipsetCodename = "N/A"
+
+    if not chipsetCodename:
         chipsetCodename = "N/A"
-        chipsetMarketName = " ".join(chipsetInformationsList.split()[2:-2])
-        chipsetEngravingFineness = chipsetInformationsList.split()[-2].replace("(", "")
+
+    chipsetMarketName = " ".join(chipsetInformationsList.split()[2:-2])
+    chipsetEngravingFineness = chipsetInformationsList.split()[-2].replace("(", "")
 
     return chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness
