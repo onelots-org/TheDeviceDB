@@ -108,24 +108,36 @@ def extract_chipsetInfos(page):
     else:
         chipsetInformationsList = chipsetInformationsList.text
         chipsetVendor = chipsetInformationsList.split()[0]
-        chipsetCode = chipsetInformationsList.split()[1]
         if chipsetVendor == "Qualcomm":
+            chipsetCode = chipsetInformationsList.split()[1]
             chipsetCodename = qualcomm_socs.get(chipsetCode)
-        elif chipsetVendor == "Mediatek":
+            if not chipsetCodename:
+                chipsetCodename = "N/A"
             chipsetMarketName = " ".join(chipsetInformationsList.split()[2:-2])
-            if not "MTK" in chipsetMarketName:
-                chipsetCodename = mediatek_socs.get(chipsetCode)
+        elif chipsetVendor == "Mediatek":
+            chipsetCode = chipsetInformationsList.split()[1]
+            chipsetCodename = "N/A"
+            if not "MT" in chipsetCode:
+                chipsetMarketName = " ".join(chipsetInformationsList.split()[1:3])
+                chipsetCode = mediatek_socs.get(chipsetMarketName)
+            else:
+                chipsetMarketName = " ".join(chipsetInformationsList.split()[2:-2])
+        elif chipsetVendor == "Intel":
+            chipsetCode = chipsetInformationsList.split()[2]
+            chipsetCodename = "N/A"
+            chipsetMarketName = " ".join(chipsetInformationsList.split()[1:3])
+        elif chipsetVendor == "Exynos":
+            if len(chipsetInformationsList.split("(")) == 2:
+                chipsetCodename = "N/A"
+                chipsetCode = "".join(chipsetInformationsList.split()[0:2])
+                chipsetMarketName = " ".join(chipsetInformationsList.split()[0:2])
         else:
             chipsetCodename = "N/A"
-
-    if not chipsetCodename:
-        chipsetCodename = "N/A"
+            chipsetCode = chipsetInformationsList.split()[1]
 
     if not "nm" in chipsetInformationsList.lower():
-        chipsetMarketName = " ".join(chipsetInformationsList.split()[2:])
         chipsetEngravingFineness = get_engraving_fineness(chipsetInformationsList)
     else:
-        chipsetMarketName = " ".join(chipsetInformationsList.split()[2:-2])
         chipsetEngravingFineness = get_engraving_fineness(chipsetInformationsList)
 
     return chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness
