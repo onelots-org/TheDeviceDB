@@ -1,501 +1,501 @@
 {
   "SDM845": {
     "HLOS": "Msmskunk",
-    "BSP": [
+    "Die": [
       "Napali"
     ]
   },
   "SM4125": {
     "HLOS": "Bengal",
-    "BSP": [
+    "Die": [
       "Agatti"
       ]
   },
   "SM6115": {
     "HLOS": "Bengal",
-    "BSP": [
+    "Die": [
       "Undefined"
       ]
   },
   "SM6125": {
     "HLOS": "Trinket",
-    "BSP": [
+    "Die": [
       "Nicobar"
       ]
   },
   "SM6150": {
     "HLOS": "Undefined",
-    "BSP": [
+    "Die": [
       "Talos"
       ]
   },
   "SM6150-AC": {
     "HLOS": "Undefined",
-    "BSP": [
+    "Die": [
       "Talos"
       ]
   },
   "SM7125": {
     "HLOS": "Atoll",
-    "BSP": [
+    "Die": [
       "Rennell"
     ]
   },
   "SM7150": {
     "HLOS": "Sdmmagpie",
-    "BSP": [
+    "Die": [
       "Moorea"
     ]
   },
   "SM7150-AB": {
     "HLOS": "Sdmmagpie",
-    "BSP": [
+    "Die": [
       "Moorea"
     ]
   },
   "SM7150-AC": {
     "HLOS": "Sdmmagpie",
-    "BSP": [
+    "Die": [
       "Moorea"
     ]
   },
   "SM8150": {
     "HLOS": "Msmnile",
-    "BSP": [
+    "Die": [
       "Hana"
     ]
   },
   "SM8150-AC": {
     "HLOS": "Msmnile",
-    "BSP": [
+    "Die": [
       "Hana"
     ]
   },
   "SM4250-AA": {
     "HLOS": "Bengal",
-    "BSP": [
+    "Die": [
       "Kamorta"
     ]
   },
   "SM6225": {
     "HLOS": "Bengal",
-    "BSP": [
+    "Die": [
       "Bitra",
       "Divar"
     ]
   },
   "SM6225-AD": {
     "HLOS": "Bengal",
-    "BSP": [
+    "Die": [
       "Bitra",
       "Divar"
     ]
   },
   "SM6250": {
     "HLOS": "Atoll",
-    "BSP": [
+    "Die": [
       "Atoll"
     ]
   },
   "SM7225": {
     "HLOS": "Lito",
-    "BSP": [
+    "Die": [
       "Bitra",
       "Lagoon"
     ]
   },
   "SM7225-2-AB": {
     "HLOS": "Lito",
-    "BSP": [
+    "Die": [
       "Bitra",
       "Lagoon"
     ]
   },
   "SM7250": {
     "HLOS": "Lito",
-    "BSP": [
+    "Die": [
       "Saipan",
       "Nairo"
     ]
   },
   "SM7250-AA": {
     "HLOS": "Lito",
-    "BSP": [
+    "Die": [
       "Saipan",
       "Nairo"
     ]
   },
   "SM7250-AB": {
     "HLOS": "Lito",
-    "BSP": [
+    "Die": [
       "Saipan",
       "Nairo"
     ]
   },
   "SM7250-AC": {
     "HLOS": "Lito",
-    "BSP": [
+    "Die": [
       "Saipan",
       "Nairo"
     ]
   },
   "SM8250": {
     "HLOS": "Kona",
-    "BSP": [
+    "Die": [
       "Kona"
     ]
   },
   "SM8250-AB": {
     "HLOS": "Kona",
-    "BSP": [
+    "Die": [
       "Kona"
     ]
   },
   "SM8250-AC": {
     "HLOS": "Kona",
-    "BSP": [
+    "Die": [
       "Kona"
     ]
   },
   "SM4350": {
     "HLOS": "Holi",
-    "BSP": [
+    "Die": [
       "Mannar"
     ]
   },
   "SM4350-AC": {
     "HLOS": "Holi",
-    "BSP": [
+    "Die": [
       "Mannar"
     ]
   },
   "SM4375": {
     "HLOS": "Holi",
-    "BSP": [
+    "Die": [
       "Conic",
       "Blair_Lite"
     ]
   },
   "SM6350": {
     "HLOS": "Lito",
-    "BSP": [
+    "Die": [
       "Bitra"
     ]
   },
   "SM6370": {
     "HLOS": "Holi",
-    "BSP": [
+    "Die": [
       "Aran"
     ]
   },
   "SM6375": {
     "HLOS": "Holi",
-    "BSP": [
+    "Die": [
       "Blair",
       "Strait"
     ]
   },
   "SM6375-AB": {
     "HLOS": "Holi",
-    "BSP": [
+    "Die": [
       "Blair",
       "Strait"
     ]
   },
   "SM6375-AC": {
     "HLOS": "Holi",
-    "BSP": [
+    "Die": [
       "Blair",
       "Strait"
     ]
   },
   "SM7315": {
     "HLOS": "Lahaina",
-    "BSP": [
+    "Die": [
       "Faroe"
     ]
   },
   "SM7325": {
     "HLOS": "Lahaina",
-    "BSP": [
+    "Die": [
       "Kodiak",
       "Yupik"
     ]
   },
   "SM7325-AE": {
     "HLOS": "Lahaina",
-    "BSP": [
+    "Die": [
       "Kodiak",
       "Yupik"
     ]
   },
   "SM7325-AF": {
     "HLOS": "Lahaina",
-    "BSP": [
+    "Die": [
       "Kodiak",
       "Yupik"
     ]
   },
   "SM7350": {
     "HLOS": "Lahaina",
-    "BSP": [
+    "Die": [
       "Cedros"
     ]
   },
   "SM8325": {
     "HLOS": "Lahaina",
-    "BSP": [
+    "Die": [
       "Bodrum"
     ]
   },
   "SM8350": {
     "HLOS": "Lahaina",
-    "BSP": [
+    "Die": [
       "Lahaina"
     ]
   },
   "SM8350-AC": {
     "HLOS": "Lahaina",
-    "BSP": [
+    "Die": [
       "Lahaina"
     ]
   },
   "SM4425": {
     "HLOS": "Waipio",
-    "BSP": [
+    "Die": [
       "Puna"
     ]
   },
   "SM4450": {
     "HLOS": "Parrot",
-    "BSP": [
+    "Die": [
       "Clarence"
     ]
   },
   "SM6450": {
     "HLOS": "Parrot",
-    "BSP": [
+    "Die": [
       "Netrani",
       "Parrot"
     ]
   },
   "SM6450-AC": {
     "HLOS": "Parrot",
-    "BSP": [
+    "Die": [
       "Netrani",
       "Parrot"
     ]
   },
   "SM6475": {
     "HLOS": "Parrot",
-    "BSP": [
+    "Die": [
       "Netrani",
       "Parrot"
     ]
   },
   "SM6475-AB": {
     "HLOS": "Parrot",
-    "BSP": [
+    "Die": [
       "Netrani",
       "Parrot"
     ]
   },
   "SM7435": {
     "HLOS": "Parrot",
-    "BSP": [
+    "Die": [
       "Netrani",
       "Parrot"
     ]
   },
   "SM7435-AB": {
     "HLOS": "Parrot",
-    "BSP": [
+    "Die": [
       "Netrani",
       "Parrot"
     ]
   },
   "SM7450": {
     "HLOS": "Waipio",
-    "BSP": [
+    "Die": [
       "Fillmore",
       "Diwali"
     ]
   },
   "SM7450-AB": {
     "HLOS": "Waipio",
-    "BSP": [
+    "Die": [
       "Fillmore",
       "Diwali"
     ]
   },
   "SM7475": {
     "HLOS": "Waipio",
-    "BSP": [
+    "Die": [
       "Tofino"
     ]
   },
   "SM7475-AC": {
     "HLOS": "Waipio",
-    "BSP": [
+    "Die": [
       "Tofino"
     ]
   },
   "SM8415": {
     "HLOS": "Waipio",
-    "BSP": [
+    "Die": [
       "Alakai"
     ]
   },
   "SM8450": {
     "HLOS": "Waipio",
-    "BSP": [
+    "Die": [
       "Taro"
     ]
   },
   "SM8475": {
     "HLOS": "Waipio",
-    "BSP": [
+    "Die": [
       "Cape",
       "Palima"
     ]
   },
   "SM7525": {
     "HLOS": "Kalama",
-    "BSP": [
+    "Die": [
       "Shaw"
     ]
   },
   "SM7550": {
     "HLOS": "Kalama",
-    "BSP": [
+    "Die": [
       "Crow",
       "Kapiti"
     ]
   },
   "SM7550-AB": {
     "HLOS": "Kalama",
-    "BSP": [
+    "Die": [
       "Crow",
       "Kapiti"
     ]
   },
   "QCS8550": {
     "HLOS": "KalamaP",
-    "BSP": [
+    "Die": [
       "Kailua"
     ]
   },
   "SM8550": {
     "HLOS": "Kalama",
-    "BSP": [
+    "Die": [
       "Kailua"
     ]
   },
   "SM8550-AB": {
     "HLOS": "Kalama",
-    "BSP": [
+    "Die": [
       "Kailua"
     ]
   },
   "SM8550-AC": {
     "HLOS": "Kalama",
-    "BSP": [
+    "Die": [
       "Kailua"
     ]
   },
   "SM4635": {
     "HLOS": "Pitti",
-    "BSP": [
+    "Die": [
       "Kalpeni"
     ]
   },
   "SM7635": {
     "HLOS":"Volcano",
-    "BSP": [
+    "Die": [
       "Milos"
     ]
   },
   "SM8635": {
     "HLOS":"Undefined",
-    "BSP": [
+    "Die": [
       "Palawan"
     ]
   },
   "SM8650": {
     "HLOS":"Pineapple",
-    "BSP": [
+    "Die": [
       "Lanai"
     ]
   },
   "SM8650-AB": {
     "HLOS":"Pineapple",
-    "BSP": [
+    "Die": [
       "Lanai"
     ]
   },
   "SM8650-AC": {
     "HLOS":"Pineapple",
-    "BSP": [
+    "Die": [
       "Lanai"
     ]
   },
   "SM7750": {
     "HLOS":"Kera",
-    "BSP": [
+    "Die": [
       "Eliza"
     ]
   },
   "SM7750-AC": {
     "HLOS":"Kera",
-    "BSP": [
+    "Die": [
       "Eliza"
     ]
   },
   "SM8735": {
     "HLOS":"Undefined",
-    "BSP": [
+    "Die": [
       "Bonito"
     ]
   },
   "CQ8750S": {
     "HLOS": "SunP",
-    "BSP": [
+    "Die": [
       "Pakala"
     ]
   },
   "SM8750": {
     "HLOS": "Sun",
-    "BSP": [
+    "Die": [
       "Pakala"
     ]
   },
   "SM8750-AB": {
     "HLOS": "Sun",
-    "BSP": [
+    "Die": [
       "Pakala"
     ]
   },
   "SM8750-AC": {
     "HLOS": "Sun",
-    "BSP": [
+    "Die": [
       "Pakala"
     ]
   },
   "SM8750-3-AB": {
     "HLOS": "Sun",
-    "BSP": [
+    "Die": [
       "Pakala"
     ]
   },
   "SM8850": {
     "HLOS": "Kanoe",
-    "BSP": [
+    "Die": [
       "Kaanapali"
     ]
   },
   "SM8850-AC": {
     "HLOS": "Kanoe",
-    "BSP": [
+    "Die": [
       "Kaanapali"
     ]
   }
