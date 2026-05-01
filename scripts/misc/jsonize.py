@@ -7,7 +7,7 @@ def jsonize(deviceName,
                displaySpecs, maxRefreshRate, metricDisplaySizeSquared, imperialDisplaySize,
                widthPixels, heightPixels, displayRatio, displayDensity,
                stockOsLaunchName, stockOsLaunchVersion, stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename, maxAndroidVersionUpdate,
-               chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness
+               chipsets
                ):
 
     page = {
@@ -57,14 +57,9 @@ def jsonize(deviceName,
                     "Stock Custom OS": stockLaunchCustomRom,
                     "Stock Custom OS Version": stockLaunchCustomRomVersion
                 },
-                "CPU": {
-                    "Vendor": chipsetVendor,
-                    "Platform": chipsetCode,
-                    "Platform Codename": chipsetCodename,
-                    "Market Name": chipsetMarketName,
-                    "Processor Engraving Fineness": chipsetEngravingFineness
-                }
+                "CPU": chipsets,
             }
         }
     }
     return page
+# "CPU": chipsets because Samsung thought it was a BRILLIANT idea to have 2 SoCs for 1 device.

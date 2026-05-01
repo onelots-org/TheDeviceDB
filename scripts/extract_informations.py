@@ -26,7 +26,7 @@ def get_page(url):
     displaySpecs, maxRefreshRate, imperialDisplaySize, metricDisplaySizeSquared, widthPixels, heightPixels, displayRatio, displayDensity, displayProtection = display.extract_network(result)
     # Platform
     stockOsLaunchName, stockOsLaunchVersion, stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename, maxAndroidVersionUpdate = platform.extract_stockOsInfos(result)
-    chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness = platform.extract_chipsetInfos(result)
+    chipsets = platform.extract_chipsetInfos(result)
 
     print(jsonize.jsonize(deviceName,
                      networkTechnologiesList, twoGBands, threeGbands, fourGBands, fiveGBands,
@@ -35,10 +35,15 @@ def get_page(url):
                      displaySpecs, maxRefreshRate, metricDisplaySizeSquared, imperialDisplaySize,
                      widthPixels, heightPixels, displayRatio, displayDensity,
                      stockOsLaunchName, stockOsLaunchVersion, stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename, maxAndroidVersionUpdate,
-                     chipsetVendor, chipsetCode, chipsetCodename, chipsetMarketName, chipsetEngravingFineness
+                     chipsets
                      ))
 
 #base_url = ("https://www.gsmarena.com/model-{}.php")
 #random_page = random.randint(2002, 14638)
 #print(base_url.format(random_page))
 #get_page(base_url.format(random_page))
+
+get_page("https://www.gsmarena.com/samsung_galaxy_tab_s7_fe-10922.php")
+
+#get_page("https://www.gsmarena.com/motorola_razr_ultra_2026-14638.php")
+# TODO : this mofo uses INCHES AND NOT IN IN SIZE GRRRR
