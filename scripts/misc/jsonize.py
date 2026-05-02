@@ -3,7 +3,7 @@ import json
 def jsonize(deviceName,
                networkTechnologiesList, twoGBands, threeGBands, fourGBands, fiveGBands,
                launchYear,
-               metricDimensions, imperialDimensions, metricWeight, imperialWeight, sims,
+               dimensions, metricWeight, imperialWeight, sims,
                displaySpecs, maxRefreshRate, metricDisplaySizeSquared, imperialDisplaySize,
                widthPixels, heightPixels, displayRatio, displayDensity,
                stockOsLaunchName, stockOsLaunchVersion, stockLaunchCustomRom, stockLaunchCustomRomVersion, stockAndroidLaunchCodename, maxAndroidVersionUpdate,
@@ -22,10 +22,7 @@ def jsonize(deviceName,
             },
             "Launch Year": launchYear,
             "Body": {
-                "Dimensions": {
-                    "Metric (mm)": metricDimensions,
-                    "Imperial (in)": imperialDimensions
-                },
+                "Dimensions": dimensions,
                 "Weight": {
                     "Metric (g)": metricWeight,
                     "Imperial (oz)": imperialWeight

@@ -107,8 +107,6 @@ def extract_chipsetInfos(page):
 
     for i in range(len(socs)):
         chipsetInformationsList = socs[i].split("-")[0]
-        print(chipsetInformationsList)
-
         if not chipsetInformationsList:
             chipsetVendor, chipsetCode, chipsetCodename, ChipsetMarketName, chipsetEngravingFineness = "N/A", "N/A", "N/A", "N/A", "N/A"
         else:
@@ -154,5 +152,4 @@ def extract_chipsetInfos(page):
         }
         chipsets.append(chipset)
 
-    print(chipsets)
     return chipsets
