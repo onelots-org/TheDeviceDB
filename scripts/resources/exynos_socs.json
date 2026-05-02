@@ -1,0 +1,242 @@
+{
+  "Exynos 1080": {
+    "model_number": "S5E9815",
+    "platform": "Exynos1080"
+  },
+  "Exynos 1280": {
+    "model_number": "S5E8825",
+    "platform": "Exynos1280"
+  },
+  "Exynos 1330": {
+    "model_number": "S5E8535",
+    "platform": "Exynos1330"
+  },
+  "Exynos 1380": {
+    "model_number": "S5E8835",
+    "platform": "Exynos1380"
+  },
+  "Exynos 1480": {
+    "model_number": "S5E8845",
+    "platform": "Exynos1480"
+  },
+  "Exynos 1580": {
+    "model_number": "S5E8855",
+    "platform": "Exynos1580"
+  },
+  "Exynos 1680": {
+    "model_number": "S5E8865",
+    "platform": "Exynos1680"
+  },
+  "Exynos 2100": {
+    "model_number": "S5E9840",
+    "platform": "Exynos2100"
+  },
+  "Exynos 2200": {
+    "model_number": "S5E9925",
+    "platform": "Exynos2200"
+  },
+  "Exynos 2500": {
+    "model_number": "S5E9955",
+    "platform": "Exynos2500"
+  },
+  "Exynos 2600": {
+    "model_number": "S5E9965",
+    "platform": "Exynos2600"
+  },
+  "Exynos 3 Dual 3250": {
+    "model_number": "Unknown",
+    "platform": "Exynos3250"
+  },
+  "Exynos 3 Quad 3470": {
+    "model_number": "Unknown",
+    "platform": "Exynos3470"
+  },
+  "Exynos 3 Quad 3475": {
+    "model_number": "Unknown",
+    "platform": "Exynos3475"
+  },
+  "Exynos 3 Single 3110": {
+    "model_number": "previously Hummingbird S5PC110",
+    "platform": "Exynos3110"
+  },
+  "Exynos 4 Dual 4210": {
+    "model_number": "Unknown",
+    "platform": "Exynos4210"
+  },
+  "Exynos 4 Dual 4212": {
+    "model_number": "Single core",
+    "platform": "Exynos4212"
+  },
+  "Exynos 4 Quad 4412": {
+    "model_number": "Unknown",
+    "platform": "Exynos4412"
+  },
+  "Exynos 4 Quad 4415": {
+    "model_number": "Unknown",
+    "platform": "Exynos4415"
+  },
+  "Exynos 5 Dual 5250": {
+    "model_number": "Unknown",
+    "platform": "Exynos5250"
+  },
+  "Exynos 5 Hexa 5260": {
+    "model_number": "Unknown",
+    "platform": "Exynos5260"
+  },
+  "Exynos 5 Octa 5410": {
+    "model_number": "Unknown",
+    "platform": "Exynos5410"
+  },
+  "Exynos 5 Octa 5420": {
+    "model_number": "Unknown",
+    "platform": "Exynos5420"
+  },
+  "Exynos 5 Octa 5422": {
+    "model_number": "Unknown",
+    "platform": "Exynos5422"
+  },
+  "Exynos 5 Octa 5430": {
+    "model_number": "Unknown",
+    "platform": "Exynos5430"
+  },
+  "Exynos 5 Octa 5800": {
+    "model_number": "Unknown",
+    "platform": "Exynos5800"
+  },
+  "Exynos 7 Dual 7270": {
+    "model_number": "SC57270",
+    "platform": "Exynos7270"
+  },
+  "Exynos 7 Octa 5433": {
+    "model_number": "Unknown",
+    "platform": "Exynos5433"
+  },
+  "Exynos 7 Octa 7420": {
+    "model_number": "Unknown",
+    "platform": "Exynos7420"
+  },
+  "Exynos 7 Octa 7580": {
+    "model_number": "Unknown",
+    "platform": "Exynos7580"
+  },
+  "Exynos 7 Octa 7870": {
+    "model_number": "Unknown",
+    "platform": "Exynos7870"
+  },
+  "Exynos 7 Quad 7570": {
+    "model_number": "Unknown",
+    "platform": "Exynos7570"
+  },
+  "Exynos 7 Quad 7578": {
+    "model_number": "Unknown",
+    "platform": "Exynos7578"
+  },
+  "Exynos 7872": {
+    "model_number": "Unknown",
+    "platform": "Exynos7872"
+  },
+  "Exynos 7880": {
+    "model_number": "Unknown",
+    "platform": "Exynos7880"
+  },
+  "Exynos 7884": {
+    "model_number": "Unknown",
+    "platform": "Exynos7884"
+  },
+  "Exynos 7884A": {
+    "model_number": "Unknown",
+    "platform": "Exynos7884"
+  },
+  "Exynos 7885": {
+    "model_number": "Unknown",
+    "platform": "Exynos7885"
+  },
+  "Exynos 7904": {
+    "model_number": "Unknown",
+    "platform": "Exynos7904"
+  },
+  "Exynos 8 Octa 8890": {
+    "model_number": "Unknown",
+    "platform": "Exynos8890"
+  },
+  "Exynos 850": {
+    "model_number": "S5E3830",
+    "platform": "Exynos850"
+  },
+  "Exynos 880": {
+    "model_number": "S5E8805",
+    "platform": "Exynos880"
+  },
+  "Exynos 8895": {
+    "model_number": "Unknown",
+    "platform": "Exynos8895"
+  },
+  "Exynos 9110": {
+    "model_number": "SC59110XSC",
+    "platform": "Exynos9110"
+  },
+  "Exynos 9609": {
+    "model_number": "Unknown",
+    "platform": "Exynos9609"
+  },
+  "Exynos 9610": {
+    "model_number": "Unknown",
+    "platform": "Exynos9610"
+  },
+  "Exynos 9611": {
+    "model_number": "Unknown",
+    "platform": "Exynos9611"
+  },
+  "Exynos 980": {
+    "model_number": "S5E9630",
+    "platform": "Exynos980"
+  },
+  "Exynos 9810": {
+    "model_number": "S5E9810",
+    "platform": "Exynos9810"
+  },
+  "Exynos 9820": {
+    "model_number": "S5E9820",
+    "platform": "Exynos9820"
+  },
+  "Exynos 9825": {
+    "model_number": "S5E9825",
+    "platform": "Exynos9825"
+  },
+  "Exynos 990": {
+    "model_number": "S5E9830",
+    "platform": "Exynos990"
+  },
+  "Exynos Auto 8890": {
+    "model_number": "SGA8890A",
+    "platform": "Exynos8890"
+  },
+  "Exynos Auto T5123": {
+    "model_number": "Unknown",
+    "platform": "Exynos5123"
+  },
+  "Exynos Auto V7": {
+    "model_number": "Unknown",
+    "platform": "Exynos7"
+  },
+  "Exynos Auto V9": {
+    "model_number": "S5AHR80A",
+    "platform": "Exynos9"
+  },
+  "Exynos Auto V920": {
+    "model_number": "S5AV920",
+    "platform": "Exynos920"
+  },
+  "Exynos W1000": {
+    "model_number": "SC55535AHA",
+    "platform": "Exynos1000"
+  },
+  "Exynos W920": {
+    "model_number": "SC55515XBD",
+    "platform": "Exynos920"
+  },
+  "Exynos W930": {
+    "model_number": "SC55515XBE",
+    "platform": "Exynos930"
+  }
+}
