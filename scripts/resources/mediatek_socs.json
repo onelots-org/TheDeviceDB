@@ -1,18 +1,215 @@
 {
-  "Helio X10": [
-    "MT6795"
+  "Dimensity 1000": [
+    "MT6889"
   ],
-  "Helio X20": [
-    "MT6797"
+  "Dimensity 1000+": [
+    "MT6889"
   ],
-  "Helio X23": [
-    "MT6797"
-    ],
-  "Helio X25": [
-    "MT6797"
+  "Dimensity 1000C": [
+    "MT6883"
   ],
-  "Helio X30": [
-    "MT6799"
+  "Dimensity 1000L": [
+    "MT6885"
+  ],
+  "Dimensity 1050": [
+    "MT6879"
+  ],
+  "Dimensity 1080": [
+    "MT6877"
+  ],
+  "Dimensity 1100": [
+    "MT6891"
+  ],
+  "Dimensity 1200": [
+    "MT6893"
+  ],
+  "Dimensity 1300": [
+    "MT6893"
+  ],
+  "Dimensity 6020": [
+    "MT6833"
+  ],
+  "Dimensity 6080": [
+    "MT6833"
+  ],
+  "Dimensity 6100+": [
+    "MT6835",
+    "MT8755"
+  ],
+  "Dimensity 6300": [
+    "MT6835"
+  ],
+  "Dimensity 6360": [
+    "Unknown"
+  ],
+  "Dimensity 6400": [
+    "MT6835"
+  ],
+  "Dimensity 6500": [
+    "Unknown"
+  ],
+  "Dimensity 700": [
+    "MT6833"
+  ],
+  "Dimensity 7020": [
+    "MT6855"
+  ],
+  "Dimensity 7025": [
+    "MT6855"
+  ],
+  "Dimensity 7030": [
+    "MT6879"
+  ],
+  "Dimensity 7050": [
+    "MT6877"
+  ],
+  "Dimensity 7060": [
+    "MT6855"
+  ],
+  "Dimensity 7100": [
+    "MT6858"
+  ],
+  "Dimensity 720": [
+    "MT6853"
+  ],
+  "Dimensity 7200": [
+    "MT6886"
+  ],
+  "Dimensity 7300": [
+    "MT6878"
+  ],
+  "Dimensity 7300X": [
+    "MT6878"
+  ],
+  "Dimensity 7300e": [
+    "MT6858"
+  ],
+  "Dimensity 7350": [
+    "MT6886"
+  ],
+  "Dimensity 7360": [
+    "MT6878"
+  ],
+  "Dimensity 7400": [
+    "MT6878"
+  ],
+  "Dimensity 7400X": [
+    "MT6878"
+  ],
+  "Dimensity 7450": [
+    "Unknown"
+  ],
+  "Dimensity 7450X": [
+    "Unknown"
+  ],
+  "Dimensity 800": [
+    "MT6873"
+  ],
+  "Dimensity 8000": [
+    "MT6895"
+  ],
+  "Dimensity 800U": [
+    "MT6853"
+  ],
+  "Dimensity 8020": [
+    "MT6891"
+  ],
+  "Dimensity 8050": [
+    "MT6893"
+  ],
+  "Dimensity 810": [
+    "MT6833"
+  ],
+  "Dimensity 8100": [
+    "MT6895",
+    "MT8795"
+  ],
+  "Dimensity 820": [
+    "MT6875"
+  ],
+  "Dimensity 8200": [
+    "MT6896"
+  ],
+  "Dimensity 8250": [
+    "MT6896"
+  ],
+  "Dimensity 8300": [
+    "MT6897",
+    "MT8792"
+  ],
+  "Dimensity 8350": [
+    "MT6897",
+    "MT8792"
+  ],
+  "Dimensity 8400": [
+    "MT6899"
+  ],
+  "Dimensity 8450": [
+    "MT6899"
+  ],
+  "Dimensity 8500": [
+    "MT6899"
+  ],
+  "Dimensity 900": [
+    "MT6877"
+  ],
+  "Dimensity 9000": [
+    "MT6983",
+    "MT8798"
+  ],
+  "Dimensity 9000+": [
+    "MT6983",
+    "MT8798"
+  ],
+  "Dimensity 920": [
+    "MT6877"
+  ],
+  "Dimensity 9200": [
+    "MT6985"
+  ],
+  "Dimensity 9200+": [
+    "MT6985"
+  ],
+  "Dimensity 930": [
+    "MT6855"
+  ],
+  "Dimensity 9300": [
+    "MT6989",
+    "MT8796"
+  ],
+  "Dimensity 9300+": [
+    "MT6989"
+  ],
+  "Dimensity 9400": [
+    "MT6991"
+  ],
+  "Dimensity 9400+": [
+    "MT6991",
+    "MT8799"
+  ],
+  "Dimensity 9400e": [
+    "MT6989"
+  ],
+  "Dimensity 9500": [
+    "MT6993"
+  ],
+  "Dimensity 9500s": [
+    "MT6991"
+  ],
+  "Genio 1200": [
+    "MT8395"
+  ],
+  "Genio 350": [
+    "MT8365"
+  ],
+  "Genio 500": [
+    "MT8385"
+  ],
+  "Genio 510": [
+    "MT8370"
+  ],
+  "Genio 700": [
+    "MT8390"
   ],
   "Helio A20": [
     "MT6761"
@@ -23,53 +220,11 @@
   "Helio A25": [
     "MT6762"
   ],
-  "Helio P10": [
-    "MT6755"
+  "Helio G100": [
+    "MT6789"
   ],
-  "Helio P15": [
-    "MT6755"
-  ],
-  "Helio P18": [
-    "MT6765"
-  ],
-  "Helio P20": [
-    "MT6757"
-  ],
-  "Helio P22": [
-    "MT6762"
-  ],
-  "Helio P23": [
-    "MT6763"
-  ],
-  "Helio P23T": [
-    "MT6763"
-  ],
-  "Helio P25": [
-    "MT6757"
-  ],
-  "Helio P25T": [
-    "MT6757"
-  ],
-  "Helio P30": [
-    "MT6758"
-  ],
-  "Helio P35": [
-    "MT6765"
-  ],
-  "Helio P60": [
-    "MT6771"
-  ],
-  "Helio P65": [
-    "MT6768"
-  ],
-  "Helio P70": [
-    "MT6771"
-  ],
-  "Helio P90": [
-    "MT6779"
-  ],
-  "Helio P95": [
-    "MT6779"
+  "Helio G200": [
+    "MT6789"
   ],
   "Helio G25": [
     "MT6762"
@@ -123,226 +278,70 @@
     "MT6789",
     "MT8781"
   ],
-  "Helio G100": [
-    "MT6789"
+  "Helio P10": [
+    "MT6755"
   ],
-  "Helio G200": [
-    "MT6789"
+  "Helio P15": [
+    "MT6755"
   ],
-  "Dimensity 700":[
-    "MT6833"
+  "Helio P18": [
+    "MT6755"
   ],
-  "Dimensity 720":[
-    "MT6853"
+  "Helio P20": [
+    "MT6757"
   ],
-  "Dimensity 800":[
-    "MT6873"
+  "Helio P22": [
+    "MT6762"
   ],
-  "Dimensity 800U":[
-    "MT6853"
+  "Helio P23": [
+    "MT6763"
   ],
-  "Dimensity 810":[
-    "MT6833"
+  "Helio P23T": [
+    "MT6763"
   ],
-  "Dimensity 820":[
-    "MT6875"
+  "Helio P25": [
+    "MT6757"
   ],
-  "Dimensity 900":[
-    "MT6877"
+  "Helio P25T": [
+    "MT6757"
   ],
-  "Dimensity 920":[
-    "MT6877"
+  "Helio P30": [
+    "MT6758"
   ],
-  "Dimensity 930":[
-    "MT6855"
+  "Helio P35": [
+    "MT6765"
   ],
-  "Dimensity 1000":[
-    "MT6889"
+  "Helio P60": [
+    "MT6771"
   ],
-  "Dimensity 1000+":[
-    "MT6889"
+  "Helio P65": [
+    "MT6768"
   ],
-  "Dimensity 1000C":[
-    "MT6883"
+  "Helio P70": [
+    "MT6771"
   ],
-  "Dimensity 1000L":[
-    "MT6885"
+  "Helio P90": [
+    "MT6779"
   ],
-  "Dimensity 1050":[
-    "MT6879"
+  "Helio P95": [
+    "MT6779"
   ],
-  "Dimensity 1080":[
-    "MT6877"
+  "Helio X10": [
+    "MT6795"
   ],
-  "Dimensity 1100":[
-    "MT6891"
+  "Helio X20": [
+    "MT6797"
   ],
-  "Dimensity 1200":[
-    "MT6893"
+  "Helio X23": [
+    "MT6797"
   ],
-  "Dimensity 1300":[
-    "MT6893"
+  "Helio X25": [
+    "MT6797"
   ],
-  "Dimensity 6020":[
-    "MT6833"
+  "Helio X27": [
+    "MT6797"
   ],
-  "Dimensity 6080": [
-    "MT6833"
-  ],
-  "Dimensity 6100+": [
-    "MT6835"
-  ],
-  "Dimensity 6300": [
-    "MT6835"
-  ],
-  "Dimensity 6360": [
-    "Unknown"
-  ],
-  "Dimensity 6400": [
-    "MT6835"
-  ],
-  "Dimensity 6500": [
-    "Unknown"
-  ],
-  "Dimensity 7020": [
-    "MT6855"
-  ],
-  "Dimensity 7025": [
-    "MT6855"
-  ],
-  "Dimensity 7030": [
-    "MT6879"
-  ],
-  "Dimensity 7050": [
-    "MT6877"
-  ],
-  "Dimensity 7060": [
-    "MT6855"
-  ],
-  "Dimensity 7100": [
-    "MT6858"
-  ],
-  "Dimensity 7200": [
-    "MT6886"
-  ],
-  "Dimensity 7300e": [
-    "MT6858"
-  ],
-  "Dimensity 7300": [
-    "MT6878"
-  ],
-  "Dimensity 7300X": [
-    "MT6878"
-  ],
-  "Dimensity 7360": [
-    "MT6878"
-  ],
-  "Dimensity 7350": [
-    "MT6886"
-  ],
-  "Dimensity 7400": [
-    "MT6878"
-  ],
-  "Dimensity 7400X": [
-    "MT6878"
-  ],
-  "Dimensity 7450": [
-    "Unknown"
-  ],
-  "Dimensity 7450X": [
-    "Unknown"
-  ],
-  "Dimensity 8000": [
-    "MT6895"
-  ],
-  "Dimensity 8020": [
-    "MT6891"
-  ],
-  "Dimensity 8050": [
-    "MT6893"
-  ],
-  "Dimensity 8100": [
-    "MT6895"
-  ],
-  "Dimensity 8200": [
-    "MT6896"
-  ],
-  "Dimensity 8250": [
-    "MT6896"
-  ],
-  "Dimensity 8300": [
-    "MT6897",
-    "MT6892"
-  ],
-  "Dimensity 8350": [
-    "MT6897",
-    "MT6892"
-  ],
-  "Dimensity 8400": [
-    "MT6899"
-  ],
-  "Dimensity 8450": [
-    "MT6899"
-  ],
-  "Dimensity 8500": [
-    "MT6899"
-  ],
-  "Dimensity 9000": [
-    "MT6983",
-    "MT8798"
-  ],
-  "Dimensity 9000+": [
-    "MT6983",
-    "MT8798"
-  ],
-  "Dimensity 9200": [
-    "MT6985"
-  ],
-  "Dimensity 9200+": [
-    "MT6985"
-  ],
-  "Dimensity 9300": [
-    "MT6989",
-    "MT8796"
-  ],
-  "Dimensity 9300+": [
-    "MT6989"
-  ],
-  "Dimensity 9400": [
-    "MT6991"
-  ],
-  "Dimensity 9400+": [
-    "MT6991",
-    "MT8799"
-  ],
-  "Dimensity 9400E": [
-    "MT6989"
-  ],
-  "Dimensity 9500": [
-    "MT6993"
-  ],
-  "Dimensity 9500S": [
-    "MT6991"
-  ],
-  "Genio 130": [
-    "MT7931"
-  ],
-  "Genio 130A": [
-    "MT7933"
-  ],
-  "Genio 350": [
-    "MT8365"
-  ],
-  "Genio 500": [
-    "MT8385"
-  ],
-  "Genio 510": [
-    "MT8370"
-  ],
-  "Genio 700": [
-    "MT8390"
-  ],
-  "Genio 1200": [
-    "MT8395"
+  "Helio X30": [
+    "MT6799"
   ]
 }
