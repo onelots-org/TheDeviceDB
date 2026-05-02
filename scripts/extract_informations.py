@@ -43,7 +43,7 @@ def get_page(url):
 #print(base_url.format(random_page))
 #get_page(base_url.format(random_page))
 
-#get_page("https://www.gsmarena.com/samsung_galaxy_tab_s7_fe-10922.php")
+get_page("https://www.gsmarena.com/samsung_galaxy_tab_s7_fe-10922.php")
 
-get_page("https://www.gsmarena.com/motorola_razr_ultra_2026-14638.php")
+#get_page("https://www.gsmarena.com/motorola_razr_ultra_2026-14638.php")
 # TODO : this mofo uses INCHES AND NOT IN IN SIZE GRRRR

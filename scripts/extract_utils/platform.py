@@ -113,10 +113,17 @@ def extract_chipsetInfos(page):
             chipsetVendor = chipsetInformationsList.split()[0]
             if chipsetVendor == "Qualcomm":
                 chipsetCode = chipsetInformationsList.split()[1]
-                chipsetCodename = qualcomm_socs.get(chipsetCode)
+                if not re.search(r"MSM|SM|SDM|APQ|QCS|CS", chipsetCode):
+                    chipsetMarketName = " ".join(chipsetInformationsList.split("(")[0].split(" ")[1:])
+                    chipsetCode = next(k for k, v in qualcomm_socs.items() if v["name"] == "Snapdragon 8 Elite")
+                    chipsetCodename = qualcomm_socs.get(chipsetCode)
+                else:
+                    chipsetCodename = qualcomm_socs.get(chipsetCode)
+                    chipsetMarketName = " ".join(chipsetInformationsList.split()[2:-2])
+
                 if not chipsetCodename:
                     chipsetCodename = "N/A"
-                chipsetMarketName = " ".join(chipsetInformationsList.split()[2:-2])
+
             elif chipsetVendor == "Mediatek":
                 chipsetCode = chipsetInformationsList.split()[1]
                 chipsetCodename = "N/A"
