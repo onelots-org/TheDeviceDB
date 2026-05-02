@@ -1,83 +1,630 @@
 {
+  "APQ8016": {
+    "name": "Snapdragon 410",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "APQ8026": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "APQ8028": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "APQ8030AB": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "APQ8064-1AA": {
+    "name": "Snapdragon 600",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "APQ8064AB": {
+    "name": "Snapdragon 600",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "APQ8064M": {
+    "name": "Snapdragon 600",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "APQ8064T": {
+    "name": "Snapdragon 600",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "APQ8074AA": {
+    "name": "Snapdragon 800",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "APQ8074AB": {
+    "name": "Snapdragon 801",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "APQ8084": {
+    "name": "Snapdragon 805",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "CQ8750S": {
+    "name": "Unknown",
+    "HLOS": "SunP",
+    "Die": [
+      "Pakala"
+    ]
+  },
+  "MSM8208": {
+    "name": "Snapdragon 208",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8210": {
+    "name": "Snapdragon 200",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8212": {
+    "name": "Snapdragon 200",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8225Q": {
+    "name": "Snapdragon 200",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8226": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8228": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8230": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8230AB": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8274AA": {
+    "name": "Snapdragon 800",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8274AB": {
+    "name": "Snapdragon 800",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8274AC": {
+    "name": "Snapdragon 801",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8610": {
+    "name": "Snapdragon 200",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8612": {
+    "name": "Snapdragon 200",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8625Q": {
+    "name": "Snapdragon 200",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8626": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8628": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8630": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8630AB": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8674AA": {
+    "name": "Snapdragon 800",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8674AB": {
+    "name": "Snapdragon 801",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8905": {
+    "name": "Qualcomm 205",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8909": {
+    "name": "Snapdragon 210",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8909AA": {
+    "name": "Snapdragon 212",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8909w": {
+    "name": "Wear 3100",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8916": {
+    "name": "Snapdragon 412",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8917": {
+    "name": "Snapdragon 425",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8920": {
+    "name": "Snapdragon 427",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8926": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8928": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8929": {
+    "name": "Snapdragon 415",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8930": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8930AA": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8930AB": {
+    "name": "Snapdragon 400",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8936": {
+    "name": "Snapdragon 610",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8937": {
+    "name": "Snapdragon 430",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8939": {
+    "name": "Snapdragon 616",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8940": {
+    "name": "Snapdragon 435",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8952": {
+    "name": "Snapdragon 617",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8953": {
+    "name": "Snapdragon 626",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8956": {
+    "name": "Snapdragon 650",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8974AA": {
+    "name": "Snapdragon 801",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8974AB": {
+    "name": "Snapdragon 801",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8974AC": {
+    "name": "Snapdragon 801",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8976": {
+    "name": "Snapdragon 653",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8992": {
+    "name": "Snapdragon 808",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8994": {
+    "name": "Snapdragon 810",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8996": {
+    "name": "Snapdragon 821",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8996AU": {
+    "name": "Snapdragon 820AM",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "MSM8998": {
+    "name": "Snapdragon 835",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "QCS8550": {
+    "name": "Unknown",
+    "HLOS": "KalamaP",
+    "Die": [
+      "Kailua"
+    ]
+  },
+  "SDM429": {
+    "name": "Snapdragon 429",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SDM429w": {
+    "name": "Wear 4100+",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SDM439": {
+    "name": "Snapdragon 439",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SDM450": {
+    "name": "Snapdragon 450",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SDM630": {
+    "name": "Snapdragon 630",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SDM632": {
+    "name": "Snapdragon 632",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SDM636": {
+    "name": "Snapdragon 636",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SDM660": {
+    "name": "Snapdragon 660",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SDM670": {
+    "name": "Snapdragon 670",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SDM710": {
+    "name": "Snapdragon 710",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SDM712": {
+    "name": "Snapdragon 712",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
   "SDM845": {
+    "name": "Snapdragon 845",
     "HLOS": "Msmskunk",
     "Die": [
       "Napali"
     ]
   },
+  "SDM850": {
+    "name": "Snapdragon 850",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
   "SM4125": {
+    "name": "Unknown",
     "HLOS": "Bengal",
     "Die": [
       "Agatti"
-      ]
-  },
-  "SM6115": {
-    "HLOS": "Bengal",
-    "Die": [
-      "Undefined"
-      ]
-  },
-  "SM6125": {
-    "HLOS": "Trinket",
-    "Die": [
-      "Nicobar"
-      ]
-  },
-  "SM6150": {
-    "HLOS": "Undefined",
-    "Die": [
-      "Talos"
-      ]
-  },
-  "SM6150-AC": {
-    "HLOS": "Undefined",
-    "Die": [
-      "Talos"
-      ]
-  },
-  "SM7125": {
-    "HLOS": "Atoll",
-    "Die": [
-      "Rennell"
-    ]
-  },
-  "SM7150": {
-    "HLOS": "Sdmmagpie",
-    "Die": [
-      "Moorea"
-    ]
-  },
-  "SM7150-AB": {
-    "HLOS": "Sdmmagpie",
-    "Die": [
-      "Moorea"
-    ]
-  },
-  "SM7150-AC": {
-    "HLOS": "Sdmmagpie",
-    "Die": [
-      "Moorea"
-    ]
-  },
-  "SM8150": {
-    "HLOS": "Msmnile",
-    "Die": [
-      "Hana"
-    ]
-  },
-  "SM8150-AC": {
-    "HLOS": "Msmnile",
-    "Die": [
-      "Hana"
     ]
   },
   "SM4250-AA": {
+    "name": "Snapdragon 460",
     "HLOS": "Bengal",
     "Die": [
       "Kamorta"
     ]
   },
+  "SM4350": {
+    "name": "Snapdragon 480",
+    "HLOS": "Holi",
+    "Die": [
+      "Mannar"
+    ]
+  },
+  "SM4350-AC": {
+    "name": "Snapdragon 480+",
+    "HLOS": "Holi",
+    "Die": [
+      "Mannar"
+    ]
+  },
+  "SM4375": {
+    "name": "Snapdragon 4 Gen 1",
+    "HLOS": "Holi",
+    "Die": [
+      "Conic",
+      "Blair_Lite"
+    ]
+  },
+  "SM4425": {
+    "name": "Unknown",
+    "HLOS": "Waipio",
+    "Die": [
+      "Puna"
+    ]
+  },
+  "SM4450": {
+    "name": "Snapdragon 4 Gen 2 Accelerated Edition",
+    "HLOS": "Parrot",
+    "Die": [
+      "Clarence"
+    ]
+  },
+  "SM4450-AF": {
+    "name": "Snapdragon 4 Gen 4",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SM4635": {
+    "name": "Snapdragon 4s Gen 2",
+    "HLOS": "Pitti",
+    "Die": [
+      "Kalpeni"
+    ]
+  },
+  "SM6115": {
+    "name": "Snapdragon 662",
+    "HLOS": "Bengal",
+    "Die": [
+      "Undefined"
+    ]
+  },
+  "SM6115-AC": {
+    "name": "Snapdragon 6s 4G Gen 1",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SM6125": {
+    "name": "Snapdragon 665",
+    "HLOS": "Trinket",
+    "Die": [
+      "Nicobar"
+    ]
+  },
+  "SM6150": {
+    "name": "Snapdragon 675",
+    "HLOS": "Undefined",
+    "Die": [
+      "Talos"
+    ]
+  },
+  "SM6150-AC": {
+    "name": "Snapdragon 675",
+    "HLOS": "Undefined",
+    "Die": [
+      "Talos"
+    ]
+  },
   "SM6225": {
+    "name": "Snapdragon 680",
     "HLOS": "Bengal",
     "Die": [
       "Bitra",
@@ -85,110 +632,43 @@
     ]
   },
   "SM6225-AD": {
+    "name": "Snapdragon 680",
     "HLOS": "Bengal",
     "Die": [
       "Bitra",
       "Divar"
     ]
   },
+  "SM6225-AF": {
+    "name": "Snapdragon 6s 4G Gen 2",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
   "SM6250": {
+    "name": "Unknown",
     "HLOS": "Atoll",
     "Die": [
       "Atoll"
     ]
   },
-  "SM7225": {
-    "HLOS": "Lito",
-    "Die": [
-      "Bitra",
-      "Lagoon"
-    ]
-  },
-  "SM7225-2-AB": {
-    "HLOS": "Lito",
-    "Die": [
-      "Bitra",
-      "Lagoon"
-    ]
-  },
-  "SM7250": {
-    "HLOS": "Lito",
-    "Die": [
-      "Saipan",
-      "Nairo"
-    ]
-  },
-  "SM7250-AA": {
-    "HLOS": "Lito",
-    "Die": [
-      "Saipan",
-      "Nairo"
-    ]
-  },
-  "SM7250-AB": {
-    "HLOS": "Lito",
-    "Die": [
-      "Saipan",
-      "Nairo"
-    ]
-  },
-  "SM7250-AC": {
-    "HLOS": "Lito",
-    "Die": [
-      "Saipan",
-      "Nairo"
-    ]
-  },
-  "SM8250": {
-    "HLOS": "Kona",
-    "Die": [
-      "Kona"
-    ]
-  },
-  "SM8250-AB": {
-    "HLOS": "Kona",
-    "Die": [
-      "Kona"
-    ]
-  },
-  "SM8250-AC": {
-    "HLOS": "Kona",
-    "Die": [
-      "Kona"
-    ]
-  },
-  "SM4350": {
-    "HLOS": "Holi",
-    "Die": [
-      "Mannar"
-    ]
-  },
-  "SM4350-AC": {
-    "HLOS": "Holi",
-    "Die": [
-      "Mannar"
-    ]
-  },
-  "SM4375": {
-    "HLOS": "Holi",
-    "Die": [
-      "Conic",
-      "Blair_Lite"
-    ]
-  },
   "SM6350": {
+    "name": "Snapdragon 690",
     "HLOS": "Lito",
     "Die": [
       "Bitra"
     ]
   },
   "SM6370": {
+    "name": "Unknown",
     "HLOS": "Holi",
     "Die": [
       "Aran"
     ]
   },
   "SM6375": {
+    "name": "Snapdragon 695",
     "HLOS": "Holi",
     "Die": [
       "Blair",
@@ -196,6 +676,7 @@
     ]
   },
   "SM6375-AB": {
+    "name": "Snapdragon 695",
     "HLOS": "Holi",
     "Die": [
       "Blair",
@@ -203,76 +684,22 @@
     ]
   },
   "SM6375-AC": {
+    "name": "Snapdragon 6s Gen 3",
     "HLOS": "Holi",
     "Die": [
       "Blair",
       "Strait"
     ]
   },
-  "SM7315": {
-    "HLOS": "Lahaina",
+  "SM6435-AA": {
+    "name": "Snapdragon 6s Gen 4",
+    "HLOS": "Unknown",
     "Die": [
-      "Faroe"
-    ]
-  },
-  "SM7325": {
-    "HLOS": "Lahaina",
-    "Die": [
-      "Kodiak",
-      "Yupik"
-    ]
-  },
-  "SM7325-AE": {
-    "HLOS": "Lahaina",
-    "Die": [
-      "Kodiak",
-      "Yupik"
-    ]
-  },
-  "SM7325-AF": {
-    "HLOS": "Lahaina",
-    "Die": [
-      "Kodiak",
-      "Yupik"
-    ]
-  },
-  "SM7350": {
-    "HLOS": "Lahaina",
-    "Die": [
-      "Cedros"
-    ]
-  },
-  "SM8325": {
-    "HLOS": "Lahaina",
-    "Die": [
-      "Bodrum"
-    ]
-  },
-  "SM8350": {
-    "HLOS": "Lahaina",
-    "Die": [
-      "Lahaina"
-    ]
-  },
-  "SM8350-AC": {
-    "HLOS": "Lahaina",
-    "Die": [
-      "Lahaina"
-    ]
-  },
-  "SM4425": {
-    "HLOS": "Waipio",
-    "Die": [
-      "Puna"
-    ]
-  },
-  "SM4450": {
-    "HLOS": "Parrot",
-    "Die": [
-      "Clarence"
+      "Unknown"
     ]
   },
   "SM6450": {
+    "name": "Snapdragon 6 Gen 1",
     "HLOS": "Parrot",
     "Die": [
       "Netrani",
@@ -280,6 +707,7 @@
     ]
   },
   "SM6450-AC": {
+    "name": "Snapdragon 6 Gen 1",
     "HLOS": "Parrot",
     "Die": [
       "Netrani",
@@ -287,6 +715,7 @@
     ]
   },
   "SM6475": {
+    "name": "Snapdragon 6 Gen 3",
     "HLOS": "Parrot",
     "Die": [
       "Netrani",
@@ -294,13 +723,150 @@
     ]
   },
   "SM6475-AB": {
+    "name": "Snapdragon 6 Gen 3",
     "HLOS": "Parrot",
     "Die": [
       "Netrani",
       "Parrot"
     ]
   },
+  "SM6650": {
+    "name": "Snapdragon 6 Gen 4",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SM7125": {
+    "name": "Snapdragon 720G",
+    "HLOS": "Atoll",
+    "Die": [
+      "Rennell"
+    ]
+  },
+  "SM7150": {
+    "name": "Snapdragon 730",
+    "HLOS": "Sdmmagpie",
+    "Die": [
+      "Moorea"
+    ]
+  },
+  "SM7150-AA": {
+    "name": "Snapdragon 730",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SM7150-AB": {
+    "name": "Snapdragon 730G",
+    "HLOS": "Sdmmagpie",
+    "Die": [
+      "Moorea"
+    ]
+  },
+  "SM7150-AC": {
+    "name": "Snapdragon 732G",
+    "HLOS": "Sdmmagpie",
+    "Die": [
+      "Moorea"
+    ]
+  },
+  "SM7225": {
+    "name": "Snapdragon 750G",
+    "HLOS": "Lito",
+    "Die": [
+      "Bitra",
+      "Lagoon"
+    ]
+  },
+  "SM7225-2-AB": {
+    "name": "Unknown",
+    "HLOS": "Lito",
+    "Die": [
+      "Bitra",
+      "Lagoon"
+    ]
+  },
+  "SM7250": {
+    "name": "Snapdragon 765",
+    "HLOS": "Lito",
+    "Die": [
+      "Saipan",
+      "Nairo"
+    ]
+  },
+  "SM7250-AA": {
+    "name": "Snapdragon 765",
+    "HLOS": "Lito",
+    "Die": [
+      "Saipan",
+      "Nairo"
+    ]
+  },
+  "SM7250-AB": {
+    "name": "Snapdragon 765G",
+    "HLOS": "Lito",
+    "Die": [
+      "Saipan",
+      "Nairo"
+    ]
+  },
+  "SM7250-AC": {
+    "name": "Snapdragon 768G",
+    "HLOS": "Lito",
+    "Die": [
+      "Saipan",
+      "Nairo"
+    ]
+  },
+  "SM7315": {
+    "name": "Unknown",
+    "HLOS": "Lahaina",
+    "Die": [
+      "Faroe"
+    ]
+  },
+  "SM7325": {
+    "name": "Snapdragon 778G",
+    "HLOS": "Lahaina",
+    "Die": [
+      "Kodiak",
+      "Yupik"
+    ]
+  },
+  "SM7325-AE": {
+    "name": "Snapdragon 778G+",
+    "HLOS": "Lahaina",
+    "Die": [
+      "Kodiak",
+      "Yupik"
+    ]
+  },
+  "SM7325-AF": {
+    "name": "Snapdragon 782G",
+    "HLOS": "Lahaina",
+    "Die": [
+      "Kodiak",
+      "Yupik"
+    ]
+  },
+  "SM7350": {
+    "name": "Snapdragon 780G",
+    "HLOS": "Lahaina",
+    "Die": [
+      "Cedros"
+    ]
+  },
+  "SM7350-AB": {
+    "name": "Snapdragon 780G",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
   "SM7435": {
+    "name": "Snapdragon 7s Gen 2",
     "HLOS": "Parrot",
     "Die": [
       "Netrani",
@@ -308,6 +874,7 @@
     ]
   },
   "SM7435-AB": {
+    "name": "Snapdragon 7s Gen 2",
     "HLOS": "Parrot",
     "Die": [
       "Netrani",
@@ -315,6 +882,7 @@
     ]
   },
   "SM7450": {
+    "name": "Snapdragon 7 Gen 1",
     "HLOS": "Waipio",
     "Die": [
       "Fillmore",
@@ -322,6 +890,7 @@
     ]
   },
   "SM7450-AB": {
+    "name": "Snapdragon 7 Gen 1",
     "HLOS": "Waipio",
     "Die": [
       "Fillmore",
@@ -329,43 +898,35 @@
     ]
   },
   "SM7475": {
+    "name": "Snapdragon 7+ Gen 2",
     "HLOS": "Waipio",
     "Die": [
       "Tofino"
+    ]
+  },
+  "SM7475-AB": {
+    "name": "Snapdragon 7+ Gen 2",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
     ]
   },
   "SM7475-AC": {
+    "name": "Unknown",
     "HLOS": "Waipio",
     "Die": [
       "Tofino"
     ]
   },
-  "SM8415": {
-    "HLOS": "Waipio",
-    "Die": [
-      "Alakai"
-    ]
-  },
-  "SM8450": {
-    "HLOS": "Waipio",
-    "Die": [
-      "Taro"
-    ]
-  },
-  "SM8475": {
-    "HLOS": "Waipio",
-    "Die": [
-      "Cape",
-      "Palima"
-    ]
-  },
   "SM7525": {
+    "name": "Unknown",
     "HLOS": "Kalama",
     "Die": [
       "Shaw"
     ]
   },
   "SM7550": {
+    "name": "Snapdragon 7 Gen 3",
     "HLOS": "Kalama",
     "Die": [
       "Crow",
@@ -373,127 +934,282 @@
     ]
   },
   "SM7550-AB": {
+    "name": "Snapdragon 7 Gen 3",
     "HLOS": "Kalama",
     "Die": [
       "Crow",
       "Kapiti"
     ]
   },
-  "QCS8550": {
-    "HLOS": "KalamaP",
+  "SM7635": {
+    "name": "Snapdragon 7s Gen 3",
+    "HLOS": "Volcano",
     "Die": [
-      "Kailua"
+      "Milos"
+    ]
+  },
+  "SM7635-AC": {
+    "name": "Snapdragon 7s Gen 4",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SM7675-AB": {
+    "name": "Snapdragon 7+ Gen 3",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SM7750": {
+    "name": "Snapdragon 7 Gen 4",
+    "HLOS": "Kera",
+    "Die": [
+      "Eliza"
+    ]
+  },
+  "SM7750-AB": {
+    "name": "Snapdragon 7 Gen 4",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SM7750-AC": {
+    "name": "Unknown",
+    "HLOS": "Kera",
+    "Die": [
+      "Eliza"
+    ]
+  },
+  "SM8150": {
+    "name": "Snapdragon 855",
+    "HLOS": "Msmnile",
+    "Die": [
+      "Hana"
+    ]
+  },
+  "SM8150-AC": {
+    "name": "Snapdragon 860",
+    "HLOS": "Msmnile",
+    "Die": [
+      "Hana"
+    ]
+  },
+  "SM8150P": {
+    "name": "Snapdragon 855+",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SM8250": {
+    "name": "Snapdragon 865",
+    "HLOS": "Kona",
+    "Die": [
+      "Kona"
+    ]
+  },
+  "SM8250-AB": {
+    "name": "Snapdragon 865+",
+    "HLOS": "Kona",
+    "Die": [
+      "Kona"
+    ]
+  },
+  "SM8250-AC": {
+    "name": "Snapdragon 870",
+    "HLOS": "Kona",
+    "Die": [
+      "Kona"
+    ]
+  },
+  "SM8325": {
+    "name": "Unknown",
+    "HLOS": "Lahaina",
+    "Die": [
+      "Bodrum"
+    ]
+  },
+  "SM8350": {
+    "name": "Snapdragon 888",
+    "HLOS": "Lahaina",
+    "Die": [
+      "Lahaina"
+    ]
+  },
+  "SM8350-AC": {
+    "name": "Snapdragon 888+",
+    "HLOS": "Lahaina",
+    "Die": [
+      "Lahaina"
+    ]
+  },
+  "SM8415": {
+    "name": "Unknown",
+    "HLOS": "Waipio",
+    "Die": [
+      "Alakai"
+    ]
+  },
+  "SM8425": {
+    "name": "Snapdragon 8+ Gen 1 4G",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SM8450": {
+    "name": "Snapdragon 8 Gen 1",
+    "HLOS": "Waipio",
+    "Die": [
+      "Taro"
+    ]
+  },
+  "SM8475": {
+    "name": "Snapdragon 8+ Gen 1",
+    "HLOS": "Waipio",
+    "Die": [
+      "Cape",
+      "Palima"
     ]
   },
   "SM8550": {
+    "name": "Snapdragon 8 Gen 2",
     "HLOS": "Kalama",
     "Die": [
       "Kailua"
     ]
   },
   "SM8550-AB": {
+    "name": "Snapdragon 8 Gen 2",
     "HLOS": "Kalama",
     "Die": [
       "Kailua"
     ]
   },
   "SM8550-AC": {
+    "name": "Snapdragon 8 Gen 2 for Galaxy",
     "HLOS": "Kalama",
     "Die": [
       "Kailua"
     ]
   },
-  "SM4635": {
-    "HLOS": "Pitti",
-    "Die": [
-      "Kalpeni"
-    ]
-  },
-  "SM7635": {
-    "HLOS":"Volcano",
-    "Die": [
-      "Milos"
-    ]
-  },
   "SM8635": {
-    "HLOS":"Undefined",
+    "name": "Snapdragon 8s Gen 3",
+    "HLOS": "Undefined",
     "Die": [
       "Palawan"
     ]
   },
   "SM8650": {
-    "HLOS":"Pineapple",
+    "name": "Snapdragon 8 Gen 3",
+    "HLOS": "Pineapple",
     "Die": [
       "Lanai"
     ]
   },
+  "SM8650-AA": {
+    "name": "Snapdragon 8 Gen 3",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
   "SM8650-AB": {
-    "HLOS":"Pineapple",
+    "name": "Snapdragon 8 Gen 3",
+    "HLOS": "Pineapple",
     "Die": [
       "Lanai"
     ]
   },
   "SM8650-AC": {
-    "HLOS":"Pineapple",
+    "name": "Snapdragon 8 Gen 3 for Galaxy",
+    "HLOS": "Pineapple",
     "Die": [
       "Lanai"
     ]
   },
-  "SM7750": {
-    "HLOS":"Kera",
+  "SM8650-Q-AA": {
+    "name": "Snapdragon 8 Gen 3",
+    "HLOS": "Unknown",
     "Die": [
-      "Eliza"
+      "Unknown"
     ]
   },
-  "SM7750-AC": {
-    "HLOS":"Kera",
+  "SM8650-Q-AB": {
+    "name": "Snapdragon 8 Gen 3",
+    "HLOS": "Unknown",
     "Die": [
-      "Eliza"
+      "Unknown"
     ]
   },
   "SM8735": {
-    "HLOS":"Undefined",
+    "name": "Snapdragon 8s Gen 4",
+    "HLOS": "Undefined",
     "Die": [
       "Bonito"
     ]
   },
-  "CQ8750S": {
-    "HLOS": "SunP",
-    "Die": [
-      "Pakala"
-    ]
-  },
   "SM8750": {
-    "HLOS": "Sun",
-    "Die": [
-      "Pakala"
-    ]
-  },
-  "SM8750-AB": {
-    "HLOS": "Sun",
-    "Die": [
-      "Pakala"
-    ]
-  },
-  "SM8750-AC": {
+    "name": "Snapdragon 8 Elite",
     "HLOS": "Sun",
     "Die": [
       "Pakala"
     ]
   },
   "SM8750-3-AB": {
+    "name": "Snapdragon 8 Elite",
     "HLOS": "Sun",
     "Die": [
       "Pakala"
     ]
   },
+  "SM8750-AB": {
+    "name": "Snapdragon 8 Elite",
+    "HLOS": "Sun",
+    "Die": [
+      "Pakala"
+    ]
+  },
+  "SM8750-AC": {
+    "name": "Snapdragon 8 Elite for Galaxy",
+    "HLOS": "Sun",
+    "Die": [
+      "Pakala"
+    ]
+  },
+  "SM8845": {
+    "name": "Snapdragon 8 Gen 5",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
   "SM8850": {
+    "name": "Snapdragon 8 Elite Gen 5",
     "HLOS": "Kanoe",
     "Die": [
       "Kaanapali"
     ]
   },
+  "SM8850-1-AD": {
+    "name": "Snapdragon 8 Elite Gen 5 for Galaxy",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
+  "SM8850-5-AC": {
+    "name": "Snapdragon 8 Elite Gen 5",
+    "HLOS": "Unknown",
+    "Die": [
+      "Unknown"
+    ]
+  },
   "SM8850-AC": {
+    "name": "Snapdragon 8 Elite Gen 5",
     "HLOS": "Kanoe",
     "Die": [
       "Kaanapali"
