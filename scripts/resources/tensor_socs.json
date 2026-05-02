@@ -1,0 +1,22 @@
+{
+  "Tensor G1": {
+    "codename": "Whitechapel",
+    "model_number": "GS101"
+  },
+  "Tensor G2": {
+    "codename": "Cloudripper",
+    "model_number": "GS201"
+  },
+  "Tensor G3": {
+    "codename": "Zuma",
+    "model_number": "GS301"
+  },
+  "Tensor G4": {
+    "codename": "Zuma Pro",
+    "model_number": "GS401"
+  },
+  "Tensor G5": {
+    "codename": "Laguna",
+    "model_number": "Unknown"
+  }
+}
